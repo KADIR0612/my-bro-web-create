@@ -11,6 +11,8 @@ import { useEffect, type ReactNode } from "react";
 
 import appCss from "../styles.css?url";
 import { reportLovableError } from "../lib/lovable-error-reporting";
+import { SiteFooter } from "../components/site/SiteFooter";
+import { SiteHeader } from "../components/site/SiteHeader";
 
 function NotFoundComponent() {
   return (
