@@ -1,10 +1,5 @@
 # Zuber's Digital Space
 
-Jese me baat kar raha hu wese baat karo and
-
-→ https://www.surendraelectrician.in/
-
-Aesi ek site mere bhai ke liye bhi bana na hai sari details mere bhai ki add karna hai uska naam Zuber Shaikh hai
 
 This project was built with [Lovable](https://lovable.dev).
 
