@@ -19,17 +19,17 @@ import { PHONE_DISPLAY, TEL_LINK, WHATSAPP_LINK } from "@/components/site/contac
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Zuber Shaikh Electrician — Home, Shop & Commercial Electrical Work" },
+      { title: "Electrician Near Me | Zuber Shaikh | Home, Shop & Commercial" },
       {
         name: "description",
         content:
-          "ITI qualified electrician Zuber Shaikh — 7 years of experience in home, shop and commercial electrical work. Call or WhatsApp 84888 97375 for fast service.",
+          "Looking for a trusted electrician? Zuber Shaikh is ITI qualified with 7+ years experience in home, shop & commercial wiring, repair, fitting, MCB & inverter work. Call or WhatsApp 84888 97375 for fast service.",
       },
-      { property: "og:title", content: "Zuber Shaikh Electrician" },
+      { property: "og:title", content: "Electrician Near Me | Zuber Shaikh | Home, Shop & Commercial" },
       {
         property: "og:description",
         content:
-          "ITI qualified, 7 years experience. Wiring, repair, fitting — home, shop & commercial. Call 84888 97375.",
+          "ITI qualified electrician with 7+ years experience. Wiring, repair, fitting, MCB, inverter — home, shop & commercial. Call 84888 97375.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
