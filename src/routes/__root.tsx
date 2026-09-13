@@ -79,11 +79,11 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Zuber Shaikh Electrician" },
+      { title: "Electrician Near Me | Zuber Shaikh | Home, Shop & Commercial" },
       {
         name: "description",
         content:
-          "ITI qualified electrician with 7 years of experience — home, shop and commercial electrical work. Call 84888 97375.",
+          "Looking for a trusted electrician? Zuber Shaikh is ITI qualified with 7+ years experience in home, shop & commercial wiring, repair, fitting, MCB & inverter work. Call or WhatsApp 84888 97375 for fast service.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
