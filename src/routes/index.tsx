@@ -19,17 +19,17 @@ import { PHONE_DISPLAY, TEL_LINK, WHATSAPP_LINK } from "@/components/site/contac
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Electrician Near Me | Zuber Shaikh | Home, Shop & Commercial" },
+      { title: "Electrician in Ahmedabad | Zuber Shaikh | Wiring, MCB, Inverter" },
       {
         name: "description",
         content:
-          "Looking for a trusted electrician? Zuber Shaikh is ITI qualified with 7+ years experience in home, shop & commercial wiring, repair, fitting, MCB & inverter work. Call or WhatsApp 84888 97375 for fast service.",
+          "Need a reliable electrician? Zuber Shaikh, ITI-qualified with 7+ yrs experience — home, shop & commercial wiring, MCB, inverter repair. Call/WhatsApp 84888 97375 now!",
       },
-      { property: "og:title", content: "Electrician Near Me | Zuber Shaikh | Home, Shop & Commercial" },
+      { property: "og:title", content: "Electrician in Ahmedabad | Zuber Shaikh | Wiring, MCB, Inverter" },
       {
         property: "og:description",
         content:
-          "ITI qualified electrician with 7+ years experience. Wiring, repair, fitting, MCB, inverter — home, shop & commercial. Call 84888 97375.",
+          "Need a reliable electrician? Zuber Shaikh, ITI-qualified with 7+ yrs experience — home, shop & commercial wiring, MCB, inverter repair. Call/WhatsApp 84888 97375 now!",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
