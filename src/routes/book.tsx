@@ -184,24 +184,28 @@ function BookPage() {
               </div>
 
               <div className="space-y-2">
-                <Label className="flex items-center gap-2">
+                <Label htmlFor="service" className="flex items-center gap-2">
                   <Wrench className="size-4 text-primary" /> Kaunsa Kaam
                 </Label>
-                <Select
-                  value={selectedService}
-                  onValueChange={(value) => setValue("service", value, { shouldValidate: true })}
-                >
-                  <SelectTrigger aria-invalid={errors.service ? "true" : "false"}>
-                    <SelectValue placeholder="Service select karein" />
-                  </SelectTrigger>
-                  <SelectContent>
+                <div className="relative">
+                  <select
+                    id="service"
+                    {...register("service")}
+                    defaultValue=""
+                    aria-invalid={errors.service ? "true" : "false"}
+                    className="h-10 w-full appearance-none rounded-md border border-input bg-background px-3 py-2 pr-8 text-sm text-foreground outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
+                  >
+                    <option value="" disabled>
+                      Service select karein
+                    </option>
                     {serviceOptions.map((option) => (
-                      <SelectItem key={option} value={option}>
+                      <option key={option} value={option}>
                         {option}
-                      </SelectItem>
+                      </option>
                     ))}
-                  </SelectContent>
-                </Select>
+                  </select>
+                  <ChevronDown className="pointer-events-none absolute right-3 top-1/2 size-4 -translate-y-1/2 text-muted-foreground" />
+                </div>
                 {errors.service && (
                   <p className="text-sm text-destructive">{errors.service.message}</p>
                 )}
