@@ -1,5 +1,6 @@
 import { Link } from "@tanstack/react-router";
 import { Mail, MessageCircle, Phone } from "lucide-react";
+import logoAsset from "@/assets/zuber-electrician-logo.svg.asset.json";
 import { EMAIL, PHONE_DISPLAY, TEL_LINK, WHATSAPP_LINK } from "./contact-info";
 
 export function SiteFooter() {
@@ -7,7 +8,14 @@ export function SiteFooter() {
     <footer className="border-t border-border bg-surface pb-24 md:pb-0">
       <div className="mx-auto grid max-w-6xl gap-8 px-4 py-12 md:grid-cols-3">
         <div>
-          <h3 className="text-2xl">Zuber Shaikh Electrician</h3>
+          <img
+            src={logoAsset.url}
+            alt="Zuber Shaikh Electrician"
+            width={520}
+            height={160}
+            loading="lazy"
+            className="h-14 w-auto max-w-[230px] object-contain"
+          />
           <p className="mt-3 max-w-xs text-sm text-muted-foreground">
             ITI qualified electrician with 7 years of experience. Home, shop and commercial
             electrical work — safe, neat and on time.

@@ -58,13 +58,14 @@ function AboutPage() {
           </p>
           <h1 className="mt-3 text-5xl md:text-6xl">Zuber Shaikh</h1>
           <p className="mt-6 text-muted-foreground">
-            Main Zuber Shaikh — ITI qualified electrician. Pichle 7 saal se ghar, dukan aur
-            commercial electrical kaam kar raha hu. Mere liye sabse zaruri hai kaam ki
-            quality, customer ki safety aur waqt pe service.
+            Main Zuber Shaikh — Ahmedabad mein ITI qualified electrician. Pichle 7 saal se
+            ghar, dukan, office aur commercial electrical kaam kar raha hu. Mere liye sabse
+            zaruri hai kaam ki quality, customer ki safety aur waqt pe service.
           </p>
           <p className="mt-4 text-muted-foreground">
-            Wiring ho, fitting ho ya koi bada commercial project — har kaam me wahi
-            mehnat aur imaandari milti hai. Aapka bharosa hi meri asli kamai hai.
+            Wiring, fan-light fitting, MCB, inverter, fault repair ya commercial project —
+            har kaam me wahi mehnat aur imaandari milti hai. Kaam samajhne aur booking ke
+            liye aap seedha call ya WhatsApp kar sakte hain.
           </p>
           <div className="mt-8 flex flex-wrap gap-4">
             <a
