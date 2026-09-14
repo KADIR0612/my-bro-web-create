@@ -11,6 +11,7 @@ import {
   ShieldCheck,
   Store,
   Wrench,
+  Star,
 } from "lucide-react";
 import heroImage from "@/assets/hero-electrician.jpg";
 import { CallBar } from "@/components/site/CallBar";
@@ -51,6 +52,33 @@ const services = [
   { icon: Wrench, title: "Commercial Work", text: "Panel board, main line, industrial fittings aur bade projects ka kaam." },
   { icon: Plug, title: "Repair & Maintenance", text: "Short circuit, tripping, power failure — har problem ka turant ilaaj." },
   { icon: Fan, title: "Fitting Work", text: "Ceiling fan, exhaust, geyser, AC point, LED, chandelier fitting." },
+];
+
+const faqs = [
+  {
+    question: "Zuber Shaikh kaun-kaun sa electrical kaam karte hain?",
+    answer:
+      "Ghar, dukan, office aur commercial wiring ke saath fan-light fitting, MCB, panel board, inverter aur electrical fault repair ka kaam karte hain.",
+  },
+  {
+    question: "Service book kaise karein?",
+    answer:
+      "Book Now page par naam, number, address, date aur kaam select karke WhatsApp par request bhej sakte hain. Aap seedha call bhi kar sakte hain.",
+  },
+  {
+    question: "Kya urgent electrical problem ke liye call kar sakte hain?",
+    answer:
+      "Haan, short circuit, MCB tripping ya power failure jaisi urgent problem ke liye phone karke availability confirm karein.",
+  },
+  {
+    question: "Kaam ka charge kitna hoga?",
+    answer:
+      "Charge kaam, material aur site ki condition par depend karta hai. WhatsApp par photo aur details bhejkar pehle estimate puch sakte hain.",
+  },
+  {
+    question: "Kya Zuber Shaikh ITI qualified hain?",
+    answer: "Haan, Zuber Shaikh ITI qualified electrician hain aur unke paas 7 saal ka experience hai.",
+  },
 ];
 
 function Index() {
@@ -133,6 +161,55 @@ function Index() {
               <p className="mt-2 text-sm text-muted-foreground">{s.text}</p>
             </div>
           ))}
+        </div>
+      </section>
+
+      <section className="border-t border-border bg-surface">
+        <div className="mx-auto max-w-6xl px-4 py-16">
+          <div className="grid gap-8 md:grid-cols-[1fr_auto] md:items-center">
+            <div>
+              <p className="text-sm font-semibold uppercase tracking-[0.3em] text-primary">
+                Customer Reviews
+              </p>
+              <h2 className="mt-2 text-4xl md:text-5xl">Kaam Karwaya Hai?</h2>
+              <p className="mt-4 max-w-2xl text-muted-foreground">
+                Apna asli experience WhatsApp par bheje. Aapki permission ke baad hi review
+                yahan naam ke saath dikhaya jayega.
+              </p>
+            </div>
+            <a
+              href="https://wa.me/918488897375?text=Namaste%20Zuber%20bhai%2C%20maine%20aapse%20electrical%20kaam%20karwaya%20tha.%20Mera%20review%3A%20"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center justify-center gap-2 rounded border border-whatsapp px-6 py-3 font-bold text-whatsapp transition-colors hover:bg-whatsapp hover:text-primary-foreground"
+            >
+              <Star className="size-5" /> Review Bheje
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section className="border-t border-border">
+        <div className="mx-auto max-w-4xl px-4 py-16">
+          <p className="text-sm font-semibold uppercase tracking-[0.3em] text-primary">
+            FAQ
+          </p>
+          <h2 className="mt-2 text-4xl md:text-5xl">Aksar Puche Jane Wale Sawal</h2>
+          <div className="mt-8 divide-y divide-border border-y border-border">
+            {faqs.map((faq) => (
+              <details key={faq.question} className="group py-5">
+                <summary className="flex cursor-pointer list-none items-center justify-between gap-4 font-semibold text-foreground">
+                  <span>{faq.question}</span>
+                  <span className="text-2xl text-primary transition-transform group-open:rotate-45" aria-hidden="true">
+                    +
+                  </span>
+                </summary>
+                <p className="max-w-3xl pt-3 text-sm leading-6 text-muted-foreground">
+                  {faq.answer}
+                </p>
+              </details>
+            ))}
+          </div>
         </div>
       </section>
 

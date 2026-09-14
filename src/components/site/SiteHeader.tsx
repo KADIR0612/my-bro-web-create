@@ -1,5 +1,6 @@
 import { Link } from "@tanstack/react-router";
-import { Phone, Zap } from "lucide-react";
+import { Phone } from "lucide-react";
+import logoAsset from "@/assets/zuber-electrician-logo.svg.asset.json";
 import { PHONE_DISPLAY, TEL_LINK } from "./contact-info";
 
 const links = [
@@ -15,15 +16,13 @@ export function SiteHeader() {
     <header className="sticky top-0 z-40 border-b border-border bg-background/90 backdrop-blur">
       <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-3">
         <Link to="/" className="flex items-center gap-2">
-          <span className="flex size-9 items-center justify-center rounded bg-primary text-primary-foreground">
-            <Zap className="size-5" />
-          </span>
-          <span className="leading-none">
-            <span className="block font-display text-xl tracking-wide">Zuber Shaikh</span>
-            <span className="block text-[11px] uppercase tracking-[0.2em] text-muted-foreground">
-              Electrician
-            </span>
-          </span>
+          <img
+            src={logoAsset.url}
+            alt="Zuber Shaikh Electrician"
+            width={520}
+            height={160}
+            className="h-11 w-auto max-w-[190px] object-contain sm:max-w-[230px]"
+          />
         </Link>
 
         <nav className="hidden items-center gap-6 text-sm font-medium uppercase tracking-wide md:flex">
