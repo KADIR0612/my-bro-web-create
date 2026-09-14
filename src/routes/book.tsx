@@ -2,19 +2,12 @@ import { createFileRoute } from "@tanstack/react-router";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import * as z from "zod";
-import { CalendarDays, CheckCircle2, Phone, User, MapPin, Wrench } from "lucide-react";
+import { CalendarDays, CheckCircle2, Phone, User, MapPin, Wrench, ChevronDown } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from "@/components/ui/select";
 import { PHONE, PHONE_DISPLAY, TEL_LINK } from "@/components/site/contact-info";
 
 export const Route = createFileRoute("/book")({
