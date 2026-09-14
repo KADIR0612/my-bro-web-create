@@ -5,6 +5,7 @@ import { PHONE_DISPLAY, TEL_LINK } from "./contact-info";
 const links = [
   { to: "/", label: "Home" },
   { to: "/services", label: "Services" },
+  { to: "/book", label: "Book Now" },
   { to: "/about", label: "About" },
   { to: "/contact", label: "Contact" },
 ] as const;
