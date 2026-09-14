@@ -62,8 +62,6 @@ function BookPage() {
   const {
     register,
     handleSubmit,
-    setValue,
-    watch,
     formState: { errors, isSubmitting },
   } = useForm<BookingValues>({
     resolver: zodResolver(bookingSchema),
@@ -75,8 +73,6 @@ function BookPage() {
       service: "",
     },
   });
-
-  const selectedService = watch("service");
 
   const onSubmit = (values: BookingValues) => {
     const message = [
