@@ -13,21 +13,23 @@ import { PHONE, PHONE_DISPLAY, TEL_LINK } from "@/components/site/contact-info";
 export const Route = createFileRoute("/book")({
   head: () => ({
     meta: [
-      { title: "Book Electrician | Zuber Shaikh | Ahmedabad" },
+      { title: "Book Electrician in Ahmedabad | Zuber Shaikh" },
       {
         name: "description",
         content:
           "Book Zuber Shaikh, ITI-qualified electrician in Ahmedabad. Fill your name, number, address, date and service type — fast home, shop & commercial electrical work.",
       },
-      { property: "og:title", content: "Book Electrician | Zuber Shaikh | Ahmedabad" },
+      { property: "og:title", content: "Book Electrician in Ahmedabad | Zuber Shaikh" },
       {
         property: "og:description",
         content:
           "Book electrician service in Ahmedabad. Wiring, MCB, inverter, fitting, repair and more. Call/WhatsApp +91 84888 97375.",
       },
       { property: "og:type", content: "website" },
+      { property: "og:url", content: "https://my-bro-web-create.lovable.app/book" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
+    links: [{ rel: "canonical", href: "https://my-bro-web-create.lovable.app/book" }],
   }),
   component: BookPage,
 });
@@ -98,7 +100,7 @@ function BookPage() {
           <p className="text-sm font-semibold uppercase tracking-[0.3em] text-primary">
             Book Now
           </p>
-          <h1 className="mt-3 text-5xl md:text-6xl">Electrician Booking</h1>
+          <h1 className="mt-3 text-5xl md:text-6xl">Book Electrician in Ahmedabad</h1>
           <p className="mt-4 max-w-2xl text-muted-foreground">
             Neeche form bhar do — Zuber bhai aapka call ya WhatsApp confirm kar lenge aur
             fixed time pe pahunch jayenge.

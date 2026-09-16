@@ -6,20 +6,22 @@ import { EMAIL, PHONE_DISPLAY, TEL_LINK, WHATSAPP_LINK } from "@/components/site
 export const Route = createFileRoute("/contact")({
   head: () => ({
     meta: [
-      { title: "Contact — Zuber Shaikh Electrician" },
+      { title: "Contact Electrician in Ahmedabad | Zuber Shaikh" },
       {
         name: "description",
         content:
-          "Contact Zuber Shaikh, ITI qualified electrician. Call or WhatsApp 84888 97375, email zubermiyan29@gmail.com for any electrical work.",
+          "Need a nearby electrician in Ahmedabad? Call or WhatsApp Zuber Shaikh at 84888 97375 for wiring, MCB, inverter and urgent electrical repair.",
       },
-      { property: "og:title", content: "Contact — Zuber Shaikh Electrician" },
+      { property: "og:title", content: "Contact Electrician in Ahmedabad | Zuber Shaikh" },
       {
         property: "og:description",
-        content: "Call or WhatsApp 84888 97375 for fast electrical service.",
+        content: "Call or WhatsApp 84888 97375 for fast electrician service in Ahmedabad.",
       },
       { property: "og:type", content: "website" },
+      { property: "og:url", content: "https://my-bro-web-create.lovable.app/contact" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
+    links: [{ rel: "canonical", href: "https://my-bro-web-create.lovable.app/contact" }],
   }),
   component: ContactPage,
 });
@@ -32,7 +34,7 @@ function ContactPage() {
           <p className="text-sm font-semibold uppercase tracking-[0.3em] text-primary">
             Contact
           </p>
-          <h1 className="mt-3 text-5xl md:text-6xl">Baat Kare, Kaam Karwaye</h1>
+          <h1 className="mt-3 text-5xl md:text-6xl">Electrician in Ahmedabad Se Baat Kare</h1>
           <p className="mt-4 max-w-2xl text-muted-foreground">
             Call ya WhatsApp — jaise aapko aasan lage. Zuber bhai khud phone uthayenge.
           </p>
@@ -92,8 +94,8 @@ function ContactPage() {
             <Zap className="size-8 text-primary" />
             <h3 className="mt-4 text-2xl">Service Area</h3>
             <p className="mt-2 text-muted-foreground">
-              Ghar, dukan, office aur commercial sites — aas paas ke poore ilaake me service
-              available hai. Door ke kaam ke liye bhi call karke puch sakte hain.
+              Ahmedabad mein ghar, dukan, office aur commercial sites ke liye electrician
+              service available hai. Apne area ki availability ke liye call ya WhatsApp karein.
             </p>
           </div>
         </div>

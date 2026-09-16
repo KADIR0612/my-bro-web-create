@@ -20,21 +20,23 @@ import { PHONE_DISPLAY, TEL_LINK, WHATSAPP_LINK } from "@/components/site/contac
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Electrician in Ahmedabad | Zuber Shaikh | Wiring, MCB, Inverter" },
+      { title: "Electrician Near Me Ahmedabad | Zuber Shaikh" },
       {
         name: "description",
         content:
-          "Need a reliable electrician? Zuber Shaikh, ITI-qualified with 7+ yrs experience — home, shop & commercial wiring, MCB, inverter repair. Call/WhatsApp 84888 97375 now!",
+          "Need an electrician near you in Ahmedabad? Call Zuber Shaikh for home wiring, MCB, inverter, fan fitting and electrical repair. WhatsApp 84888 97375.",
       },
-      { property: "og:title", content: "Electrician in Ahmedabad | Zuber Shaikh | Wiring, MCB, Inverter" },
+      { property: "og:title", content: "Electrician Near Me Ahmedabad | Zuber Shaikh" },
       {
         property: "og:description",
         content:
-          "Need a reliable electrician? Zuber Shaikh, ITI-qualified with 7+ yrs experience — home, shop & commercial wiring, MCB, inverter repair. Call/WhatsApp 84888 97375 now!",
+          "Local electrician in Ahmedabad for home wiring, MCB, inverter, fan fitting and electrical repair. Call or WhatsApp Zuber Shaikh.",
       },
       { property: "og:type", content: "website" },
+      { property: "og:url", content: "https://my-bro-web-create.lovable.app/" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
+    links: [{ rel: "canonical", href: "https://my-bro-web-create.lovable.app/" }],
   }),
   component: Index,
 });
@@ -56,9 +58,9 @@ const services = [
 
 const faqs = [
   {
-    question: "Zuber Shaikh kaun-kaun sa electrical kaam karte hain?",
+    question: "Ahmedabad mein Zuber Shaikh kaun-kaun sa electrical kaam karte hain?",
     answer:
-      "Ghar, dukan, office aur commercial wiring ke saath fan-light fitting, MCB, panel board, inverter aur electrical fault repair ka kaam karte hain.",
+      "Ahmedabad mein ghar, dukan, office aur commercial wiring ke saath fan-light fitting, MCB, panel board, inverter aur electrical fault repair ka kaam karte hain.",
   },
   {
     question: "Service book kaise karein?",
@@ -99,15 +101,16 @@ function Index() {
 
         <div className="relative mx-auto max-w-6xl px-4 py-24 md:py-32">
           <p className="text-sm font-semibold uppercase tracking-[0.3em] text-primary">
-            ITI Certified • 7 Years Experience
+            Electrician Near Me in Ahmedabad
           </p>
           <h1 className="mt-4 max-w-2xl text-6xl md:text-8xl">
             Zuber Shaikh
             <span className="block text-primary">Electrician</span>
           </h1>
           <p className="mt-6 max-w-xl text-lg text-muted-foreground">
-            Ghar, dukan ya commercial — har tarah ka electrical kaam, ek hi bharosemand
-            electrician se. Safe wiring, saaf kaam, aur waqt pe service.
+            Ahmedabad mein ghar, dukan ya commercial electrical services ke liye local
+            electrician. Safe wiring, MCB, inverter, fan-light fitting, repair aur waqt pe
+            service.
           </p>
           <div className="mt-8 flex flex-wrap gap-4">
             <a

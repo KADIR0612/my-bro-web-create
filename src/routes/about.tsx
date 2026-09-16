@@ -7,20 +7,22 @@ import { PHONE_DISPLAY, TEL_LINK, WHATSAPP_LINK } from "@/components/site/contac
 export const Route = createFileRoute("/about")({
   head: () => ({
     meta: [
-      { title: "About — Zuber Shaikh Electrician" },
+      { title: "About Zuber Shaikh | Electrician in Ahmedabad" },
       {
         name: "description",
         content:
-          "Meet Zuber Shaikh — ITI qualified electrician with 7 years of experience in home, shop and commercial electrical work.",
+          "Meet Zuber Shaikh, an ITI-qualified electrician in Ahmedabad with 7+ years of experience in home, shop and commercial electrical work.",
       },
-      { property: "og:title", content: "About — Zuber Shaikh Electrician" },
+      { property: "og:title", content: "About Zuber Shaikh | Electrician in Ahmedabad" },
       {
         property: "og:description",
-        content: "ITI qualified electrician with 7 years of trusted experience.",
+        content: "ITI-qualified local electrician in Ahmedabad with 7+ years of trusted experience.",
       },
       { property: "og:type", content: "website" },
+      { property: "og:url", content: "https://my-bro-web-create.lovable.app/about" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
+    links: [{ rel: "canonical", href: "https://my-bro-web-create.lovable.app/about" }],
   }),
   component: AboutPage,
 });
