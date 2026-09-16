@@ -19,21 +19,23 @@ import { PHONE_DISPLAY, TEL_LINK, WHATSAPP_LINK } from "@/components/site/contac
 export const Route = createFileRoute("/services")({
   head: () => ({
     meta: [
-      { title: "Services — Zuber Shaikh Electrician" },
+      { title: "Electrical Services Ahmedabad | Zuber Shaikh" },
       {
         name: "description",
         content:
-          "Home wiring, fan & light fitting, MCB, inverter, panel board, shop and commercial electrical work — all services by ITI qualified electrician Zuber Shaikh.",
+          "Electrical services in Ahmedabad for home wiring, fan repair, light fitting, MCB, inverter, panel board, shop and commercial electrical work.",
       },
-      { property: "og:title", content: "Services — Zuber Shaikh Electrician" },
+      { property: "og:title", content: "Electrical Services Ahmedabad | Zuber Shaikh" },
       {
         property: "og:description",
         content:
-          "Home, shop & commercial electrical services — wiring, fitting, repair and maintenance.",
+          "Local electrician in Ahmedabad for home, shop and commercial wiring, fitting, repair and maintenance.",
       },
       { property: "og:type", content: "website" },
+      { property: "og:url", content: "https://my-bro-web-create.lovable.app/services" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
+    links: [{ rel: "canonical", href: "https://my-bro-web-create.lovable.app/services" }],
   }),
   component: ServicesPage,
 });
@@ -94,9 +96,10 @@ function ServicesPage() {
           <p className="text-sm font-semibold uppercase tracking-[0.3em] text-primary">
             Our Services
           </p>
-          <h1 className="mt-3 text-5xl md:text-6xl">Sabhi Electrical Services</h1>
+          <h1 className="mt-3 text-5xl md:text-6xl">Electrical Services in Ahmedabad</h1>
           <p className="mt-4 max-w-2xl text-muted-foreground">
-            Home, shop ya commercial — Zuber Shaikh har tarah ka electrical kaam ITI ki
+            Ahmedabad mein home electrician, shop ya commercial electrician chahiye? Zuber
+            Shaikh wiring, MCB, inverter, fan-light fitting aur electrical repair ka kaam ITI
             training aur 7 saal ke tajurbe ke saath karte hain.
           </p>
         </div>

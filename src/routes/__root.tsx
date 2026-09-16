@@ -80,13 +80,8 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Electrician in Ahmedabad | Zuber Shaikh | Wiring, MCB, Inverter" },
-      {
-        name: "description",
-        content:
-          "Need a reliable electrician? Zuber Shaikh, ITI-qualified with 7+ yrs experience — home, shop & commercial wiring, MCB, inverter repair. Call/WhatsApp 84888 97375 now!",
-      },
       { property: "og:type", content: "website" },
+      { property: "og:site_name", content: "Zuber Shaikh Electrician" },
       { name: "twitter:card", content: "summary_large_image" },
       {
         name: "google-site-verification",
@@ -99,7 +94,8 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         rel: "stylesheet",
         href: "https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@400;500;600;700&display=swap",
       },
-      { rel: "icon", href: "/favicon.svg", type: "image/svg+xml" },
+      { rel: "icon", href: "/favicon.png", type: "image/png" },
+      { rel: "apple-touch-icon", href: "/apple-touch-icon.png" },
     ],
   }),
   shellComponent: RootShell,
