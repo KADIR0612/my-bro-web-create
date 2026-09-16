@@ -1,14 +1,14 @@
-# Logo, Reviews, WhatsApp aur FAQ Update
+# Ahmedabad Local SEO aur Website Icon
 
 ## Kya badlega
-- Diya hua Zuber Electrician logo header mein lagayenge aur usi se browser icon set karenge.
-- Har page par WhatsApp floating button dikhayenge; mobile par existing call/WhatsApp bar se overlap nahi hoga.
-- Home page par fake testimonials ke badle “Apna Review Bheje” section add hoga, jo WhatsApp par ready message kholega.
-- Home page par common customer questions ka FAQ section add hoga.
-- About page ki existing details verify karke Ahmedabad, ITI qualification, 7 years experience aur listed services ke saath clear karenge; koi unverified claim nahi add hoga.
+- Homepage ka title, description aur visible copy “electrician near me” aur “electrician in Ahmedabad” ko naturally target karega.
+- Services, booking, about aur contact pages par unke kaam ke hisaab se local keywords add honge: home electrician, electrical services, wiring, MCB, inverter, fan/light fitting, repair, commercial electrician aur emergency electrical help.
+- Har page ka title aur description unique rahega; repeated ya zabardasti keyword stuffing nahi hogi.
+- Ahmedabad ko service area mein clearly dikhaya jayega aur page headings/copy mein natural local relevance add hogi.
+- Uploaded square Zuber Shaikh logo ko browser tab aur mobile shortcut ke website icon ke roop mein set kiya jayega.
 
 ## Technical details
-- Uploaded SVG ko site asset ke roop mein use karenge aur favicon copy `public/` mein rakhenge.
-- FAQ accessible expandable rows mein hoga.
-- WhatsApp links existing verified phone number aur pre-filled messages use karenge.
-- Desktop aur mobile preview mein logo, buttons, spacing, FAQ aur About copy check karenge.
+- India search data ke mutabik primary phrase “electrician near me” (110,000 monthly searches) aur local phrase “electrician in Ahmedabad” (480 monthly searches) hain.
+- Existing route-level metadata ko update karke title, description, Open Graph details, canonical URL aur social-card settings complete ki jayengi.
+- Uploaded PNG ko 64×64 favicon mein resize karke `public` icon ke roop mein use kiya jayega; existing favicon reference replace hogi.
+- Final result desktop/mobile preview aur page metadata dono mein verify hoga.
