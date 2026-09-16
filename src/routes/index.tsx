@@ -33,10 +33,10 @@ export const Route = createFileRoute("/")({
           "Local electrician in Ahmedabad for home wiring, MCB, inverter, fan fitting and electrical repair. Call or WhatsApp Zuber Shaikh.",
       },
       { property: "og:type", content: "website" },
-      { property: "og:url", content: "https://my-bro-web-create.lovable.app/" },
+      { property: "og:url", content: "https://zuberelectrician06.vercel.app/" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
-    links: [{ rel: "canonical", href: "https://my-bro-web-create.lovable.app/" }],
+    links: [{ rel: "canonical", href: "https://zuberelectrician06.vercel.app/" }],
   }),
   component: Index,
 });

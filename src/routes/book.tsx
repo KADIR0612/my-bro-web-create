@@ -26,10 +26,10 @@ export const Route = createFileRoute("/book")({
           "Book electrician service in Ahmedabad. Wiring, MCB, inverter, fitting, repair and more. Call/WhatsApp +91 84888 97375.",
       },
       { property: "og:type", content: "website" },
-      { property: "og:url", content: "https://my-bro-web-create.lovable.app/book" },
+      { property: "og:url", content: "https://zuberelectrician06.vercel.app/book" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
-    links: [{ rel: "canonical", href: "https://my-bro-web-create.lovable.app/book" }],
+    links: [{ rel: "canonical", href: "https://zuberelectrician06.vercel.app/book" }],
   }),
   component: BookPage,
 });
