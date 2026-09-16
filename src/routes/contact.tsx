@@ -18,10 +18,10 @@ export const Route = createFileRoute("/contact")({
         content: "Call or WhatsApp 84888 97375 for fast electrician service in Ahmedabad.",
       },
       { property: "og:type", content: "website" },
-      { property: "og:url", content: "https://my-bro-web-create.lovable.app/contact" },
+      { property: "og:url", content: "https://zuberelectrician06.vercel.app/contact" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
-    links: [{ rel: "canonical", href: "https://my-bro-web-create.lovable.app/contact" }],
+    links: [{ rel: "canonical", href: "https://zuberelectrician06.vercel.app/contact" }],
   }),
   component: ContactPage,
 });
