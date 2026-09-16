@@ -17,7 +17,7 @@ export const Route = createFileRoute("/book")({
       {
         name: "description",
         content:
-          "Book Zuber Shaikh, ITI-qualified electrician in Ahmedabad. Fill your name, number, address, date and service type — fast home, shop & commercial electrical work.",
+          "Book Zuber Shaikh, ITI-qualified electrician in Ahmedabad. Add your name, number, address, date and service for fast home, shop and commercial electrical work.",
       },
       { property: "og:title", content: "Book Electrician in Ahmedabad | Zuber Shaikh" },
       {
