@@ -11,6 +11,7 @@
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as AboutRouteImport } from './routes/about'
+import { Route as AreasRouteImport } from './routes/areas'
 import { Route as BookRouteImport } from './routes/book'
 import { Route as CommercialElectricianAhmedabadRouteImport } from './routes/commercial-electrician-ahmedabad'
 import { Route as ContactRouteImport } from './routes/contact'
@@ -44,6 +45,11 @@ const IndexRoute = IndexRouteImport.update({
 const AboutRoute = AboutRouteImport.update({
   id: '/about',
   path: '/about',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AreasRoute = AreasRouteImport.update({
+  id: '/areas',
+  path: '/areas',
   getParentRoute: () => rootRouteImport,
 } as any)
 const BookRoute = BookRouteImport.update({
@@ -177,6 +183,7 @@ const BlogShortCircuitSeKaiseBachenRoute =
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
+  '/areas': typeof AreasRoute
   '/book': typeof BookRoute
   '/commercial-electrician-ahmedabad': typeof CommercialElectricianAhmedabadRoute
   '/contact': typeof ContactRoute
@@ -205,6 +212,7 @@ export interface FileRoutesByFullPath {
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
+  '/areas': typeof AreasRoute
   '/book': typeof BookRoute
   '/commercial-electrician-ahmedabad': typeof CommercialElectricianAhmedabadRoute
   '/contact': typeof ContactRoute
@@ -234,6 +242,7 @@ export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
+  '/areas': typeof AreasRoute
   '/book': typeof BookRoute
   '/commercial-electrician-ahmedabad': typeof CommercialElectricianAhmedabadRoute
   '/contact': typeof ContactRoute
@@ -264,6 +273,7 @@ export interface FileRouteTypes {
   fullPaths:
     | '/'
     | '/about'
+    | '/areas'
     | '/book'
     | '/commercial-electrician-ahmedabad'
     | '/contact'
@@ -292,6 +302,7 @@ export interface FileRouteTypes {
   to:
     | '/'
     | '/about'
+    | '/areas'
     | '/book'
     | '/commercial-electrician-ahmedabad'
     | '/contact'
@@ -320,6 +331,7 @@ export interface FileRouteTypes {
     | '__root__'
     | '/'
     | '/about'
+    | '/areas'
     | '/book'
     | '/commercial-electrician-ahmedabad'
     | '/contact'
@@ -349,6 +361,7 @@ export interface FileRouteTypes {
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   AboutRoute: typeof AboutRoute
+  AreasRoute: typeof AreasRoute
   BookRoute: typeof BookRoute
   CommercialElectricianAhmedabadRoute: typeof CommercialElectricianAhmedabadRoute
   ContactRoute: typeof ContactRoute
@@ -389,6 +402,13 @@ declare module '@tanstack/react-router' {
       path: '/about'
       fullPath: '/about'
       preLoaderRoute: typeof AboutRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/areas': {
+      id: '/areas'
+      path: '/areas'
+      fullPath: '/areas'
+      preLoaderRoute: typeof AreasRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/book': {
@@ -565,6 +585,7 @@ declare module '@tanstack/react-router' {
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   AboutRoute: AboutRoute,
+  AreasRoute: AreasRoute,
   BookRoute: BookRoute,
   CommercialElectricianAhmedabadRoute: CommercialElectricianAhmedabadRoute,
   ContactRoute: ContactRoute,
