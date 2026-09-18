@@ -29,6 +29,7 @@ import { Route as McbPanelBoardFittingRouteImport } from './routes/mcb-panel-boa
 import { Route as ServicesRouteImport } from './routes/services'
 import { Route as ShortCircuitRepairRouteImport } from './routes/short-circuit-repair'
 import { Route as SwitchBoardSocketFittingRouteImport } from './routes/switch-board-socket-fitting'
+import { Route as BlogIndexRouteImport } from './routes/blog/index'
 import { Route as BlogElectricalSafetyTipsHomeRouteImport } from './routes/blog/electrical-safety-tips-home'
 import { Route as BlogGharKiWiringKabChangeKareRouteImport } from './routes/blog/ghar-ki-wiring-kab-change-kare'
 import { Route as BlogInverterBatteryKitneSaalChaltiHaiRouteImport } from './routes/blog/inverter-battery-kitne-saal-chalti-hai'
@@ -138,6 +139,11 @@ const SwitchBoardSocketFittingRoute =
     path: '/switch-board-socket-fitting',
     getParentRoute: () => rootRouteImport,
   } as any)
+const BlogIndexRoute = BlogIndexRouteImport.update({
+  id: '/blog/',
+  path: '/blog/',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const BlogElectricalSafetyTipsHomeRoute =
   BlogElectricalSafetyTipsHomeRouteImport.update({
     id: '/blog/electrical-safety-tips-home',
@@ -194,6 +200,7 @@ export interface FileRoutesByFullPath {
   '/blog/inverter-battery-kitne-saal-chalti-hai': typeof BlogInverterBatteryKitneSaalChaltiHaiRoute
   '/blog/mcb-trip-kyun-hota-hai': typeof BlogMcbTripKyunHotaHaiRoute
   '/blog/short-circuit-se-kaise-bachen': typeof BlogShortCircuitSeKaiseBachenRoute
+  '/blog/': typeof BlogIndexRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
@@ -221,6 +228,7 @@ export interface FileRoutesByTo {
   '/blog/inverter-battery-kitne-saal-chalti-hai': typeof BlogInverterBatteryKitneSaalChaltiHaiRoute
   '/blog/mcb-trip-kyun-hota-hai': typeof BlogMcbTripKyunHotaHaiRoute
   '/blog/short-circuit-se-kaise-bachen': typeof BlogShortCircuitSeKaiseBachenRoute
+  '/blog': typeof BlogIndexRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
@@ -249,6 +257,7 @@ export interface FileRoutesById {
   '/blog/inverter-battery-kitne-saal-chalti-hai': typeof BlogInverterBatteryKitneSaalChaltiHaiRoute
   '/blog/mcb-trip-kyun-hota-hai': typeof BlogMcbTripKyunHotaHaiRoute
   '/blog/short-circuit-se-kaise-bachen': typeof BlogShortCircuitSeKaiseBachenRoute
+  '/blog/': typeof BlogIndexRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
@@ -278,6 +287,7 @@ export interface FileRouteTypes {
     | '/blog/inverter-battery-kitne-saal-chalti-hai'
     | '/blog/mcb-trip-kyun-hota-hai'
     | '/blog/short-circuit-se-kaise-bachen'
+    | '/blog/'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
@@ -305,6 +315,7 @@ export interface FileRouteTypes {
     | '/blog/inverter-battery-kitne-saal-chalti-hai'
     | '/blog/mcb-trip-kyun-hota-hai'
     | '/blog/short-circuit-se-kaise-bachen'
+    | '/blog'
   id:
     | '__root__'
     | '/'
@@ -332,6 +343,7 @@ export interface FileRouteTypes {
     | '/blog/inverter-battery-kitne-saal-chalti-hai'
     | '/blog/mcb-trip-kyun-hota-hai'
     | '/blog/short-circuit-se-kaise-bachen'
+    | '/blog/'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
@@ -360,6 +372,7 @@ export interface RootRouteChildren {
   BlogInverterBatteryKitneSaalChaltiHaiRoute: typeof BlogInverterBatteryKitneSaalChaltiHaiRoute
   BlogMcbTripKyunHotaHaiRoute: typeof BlogMcbTripKyunHotaHaiRoute
   BlogShortCircuitSeKaiseBachenRoute: typeof BlogShortCircuitSeKaiseBachenRoute
+  BlogIndexRoute: typeof BlogIndexRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -504,6 +517,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof SwitchBoardSocketFittingRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/blog/': {
+      id: '/blog/'
+      path: '/blog'
+      fullPath: '/blog/'
+      preLoaderRoute: typeof BlogIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/blog/electrical-safety-tips-home': {
       id: '/blog/electrical-safety-tips-home'
       path: '/blog/electrical-safety-tips-home'
@@ -569,6 +589,7 @@ const rootRouteChildren: RootRouteChildren = {
     BlogInverterBatteryKitneSaalChaltiHaiRoute,
   BlogMcbTripKyunHotaHaiRoute: BlogMcbTripKyunHotaHaiRoute,
   BlogShortCircuitSeKaiseBachenRoute: BlogShortCircuitSeKaiseBachenRoute,
+  BlogIndexRoute: BlogIndexRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
