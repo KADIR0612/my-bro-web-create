@@ -46,6 +46,12 @@ export function SiteFooter() {
           <Link to="/services" className="hover:text-primary">
             Services
           </Link>
+          <Link to="/areas" className="hover:text-primary">
+            Areas
+          </Link>
+          <Link to="/blog" className="hover:text-primary">
+            Blog
+          </Link>
           <Link to="/book" className="hover:text-primary">
             Book Now
           </Link>

@@ -11,9 +11,31 @@
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as AboutRouteImport } from './routes/about'
+import { Route as AreasRouteImport } from './routes/areas'
 import { Route as BookRouteImport } from './routes/book'
+import { Route as CommercialElectricianAhmedabadRouteImport } from './routes/commercial-electrician-ahmedabad'
 import { Route as ContactRouteImport } from './routes/contact'
+import { Route as ElectricalSafetyCheckRouteImport } from './routes/electrical-safety-check'
+import { Route as ElectricianInBopalRouteImport } from './routes/electrician-in-bopal'
+import { Route as ElectricianInChandkhedaRouteImport } from './routes/electrician-in-chandkheda'
+import { Route as ElectricianInManinagarRouteImport } from './routes/electrician-in-maninagar'
+import { Route as ElectricianInNavrangpuraRouteImport } from './routes/electrician-in-navrangpura'
+import { Route as ElectricianInSatelliteRouteImport } from './routes/electrician-in-satellite'
+import { Route as ElectricianInSgHighwayRouteImport } from './routes/electrician-in-sg-highway'
+import { Route as ElectricianInVastralRouteImport } from './routes/electrician-in-vastral'
+import { Route as FanLightFittingRouteImport } from './routes/fan-light-fitting'
+import { Route as GharWiringAhmedabadRouteImport } from './routes/ghar-wiring-ahmedabad'
+import { Route as InverterBatteryFittingRouteImport } from './routes/inverter-battery-fitting'
+import { Route as McbPanelBoardFittingRouteImport } from './routes/mcb-panel-board-fitting'
 import { Route as ServicesRouteImport } from './routes/services'
+import { Route as ShortCircuitRepairRouteImport } from './routes/short-circuit-repair'
+import { Route as SwitchBoardSocketFittingRouteImport } from './routes/switch-board-socket-fitting'
+import { Route as BlogIndexRouteImport } from './routes/blog/index'
+import { Route as BlogElectricalSafetyTipsHomeRouteImport } from './routes/blog/electrical-safety-tips-home'
+import { Route as BlogGharKiWiringKabChangeKareRouteImport } from './routes/blog/ghar-ki-wiring-kab-change-kare'
+import { Route as BlogInverterBatteryKitneSaalChaltiHaiRouteImport } from './routes/blog/inverter-battery-kitne-saal-chalti-hai'
+import { Route as BlogMcbTripKyunHotaHaiRouteImport } from './routes/blog/mcb-trip-kyun-hota-hai'
+import { Route as BlogShortCircuitSeKaiseBachenRouteImport } from './routes/blog/short-circuit-se-kaise-bachen'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
@@ -25,14 +47,86 @@ const AboutRoute = AboutRouteImport.update({
   path: '/about',
   getParentRoute: () => rootRouteImport,
 } as any)
+const AreasRoute = AreasRouteImport.update({
+  id: '/areas',
+  path: '/areas',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const BookRoute = BookRouteImport.update({
   id: '/book',
   path: '/book',
   getParentRoute: () => rootRouteImport,
 } as any)
+const CommercialElectricianAhmedabadRoute =
+  CommercialElectricianAhmedabadRouteImport.update({
+    id: '/commercial-electrician-ahmedabad',
+    path: '/commercial-electrician-ahmedabad',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 const ContactRoute = ContactRouteImport.update({
   id: '/contact',
   path: '/contact',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ElectricalSafetyCheckRoute = ElectricalSafetyCheckRouteImport.update({
+  id: '/electrical-safety-check',
+  path: '/electrical-safety-check',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ElectricianInBopalRoute = ElectricianInBopalRouteImport.update({
+  id: '/electrician-in-bopal',
+  path: '/electrician-in-bopal',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ElectricianInChandkhedaRoute = ElectricianInChandkhedaRouteImport.update({
+  id: '/electrician-in-chandkheda',
+  path: '/electrician-in-chandkheda',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ElectricianInManinagarRoute = ElectricianInManinagarRouteImport.update({
+  id: '/electrician-in-maninagar',
+  path: '/electrician-in-maninagar',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ElectricianInNavrangpuraRoute =
+  ElectricianInNavrangpuraRouteImport.update({
+    id: '/electrician-in-navrangpura',
+    path: '/electrician-in-navrangpura',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const ElectricianInSatelliteRoute = ElectricianInSatelliteRouteImport.update({
+  id: '/electrician-in-satellite',
+  path: '/electrician-in-satellite',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ElectricianInSgHighwayRoute = ElectricianInSgHighwayRouteImport.update({
+  id: '/electrician-in-sg-highway',
+  path: '/electrician-in-sg-highway',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ElectricianInVastralRoute = ElectricianInVastralRouteImport.update({
+  id: '/electrician-in-vastral',
+  path: '/electrician-in-vastral',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const FanLightFittingRoute = FanLightFittingRouteImport.update({
+  id: '/fan-light-fitting',
+  path: '/fan-light-fitting',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const GharWiringAhmedabadRoute = GharWiringAhmedabadRouteImport.update({
+  id: '/ghar-wiring-ahmedabad',
+  path: '/ghar-wiring-ahmedabad',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const InverterBatteryFittingRoute = InverterBatteryFittingRouteImport.update({
+  id: '/inverter-battery-fitting',
+  path: '/inverter-battery-fitting',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const McbPanelBoardFittingRoute = McbPanelBoardFittingRouteImport.update({
+  id: '/mcb-panel-board-fitting',
+  path: '/mcb-panel-board-fitting',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ServicesRoute = ServicesRouteImport.update({
@@ -40,43 +134,258 @@ const ServicesRoute = ServicesRouteImport.update({
   path: '/services',
   getParentRoute: () => rootRouteImport,
 } as any)
+const ShortCircuitRepairRoute = ShortCircuitRepairRouteImport.update({
+  id: '/short-circuit-repair',
+  path: '/short-circuit-repair',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SwitchBoardSocketFittingRoute =
+  SwitchBoardSocketFittingRouteImport.update({
+    id: '/switch-board-socket-fitting',
+    path: '/switch-board-socket-fitting',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const BlogIndexRoute = BlogIndexRouteImport.update({
+  id: '/blog/',
+  path: '/blog/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const BlogElectricalSafetyTipsHomeRoute =
+  BlogElectricalSafetyTipsHomeRouteImport.update({
+    id: '/blog/electrical-safety-tips-home',
+    path: '/blog/electrical-safety-tips-home',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const BlogGharKiWiringKabChangeKareRoute =
+  BlogGharKiWiringKabChangeKareRouteImport.update({
+    id: '/blog/ghar-ki-wiring-kab-change-kare',
+    path: '/blog/ghar-ki-wiring-kab-change-kare',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const BlogInverterBatteryKitneSaalChaltiHaiRoute =
+  BlogInverterBatteryKitneSaalChaltiHaiRouteImport.update({
+    id: '/blog/inverter-battery-kitne-saal-chalti-hai',
+    path: '/blog/inverter-battery-kitne-saal-chalti-hai',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const BlogMcbTripKyunHotaHaiRoute = BlogMcbTripKyunHotaHaiRouteImport.update({
+  id: '/blog/mcb-trip-kyun-hota-hai',
+  path: '/blog/mcb-trip-kyun-hota-hai',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const BlogShortCircuitSeKaiseBachenRoute =
+  BlogShortCircuitSeKaiseBachenRouteImport.update({
+    id: '/blog/short-circuit-se-kaise-bachen',
+    path: '/blog/short-circuit-se-kaise-bachen',
+    getParentRoute: () => rootRouteImport,
+  } as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
+  '/areas': typeof AreasRoute
   '/book': typeof BookRoute
+  '/commercial-electrician-ahmedabad': typeof CommercialElectricianAhmedabadRoute
   '/contact': typeof ContactRoute
+  '/electrical-safety-check': typeof ElectricalSafetyCheckRoute
+  '/electrician-in-bopal': typeof ElectricianInBopalRoute
+  '/electrician-in-chandkheda': typeof ElectricianInChandkhedaRoute
+  '/electrician-in-maninagar': typeof ElectricianInManinagarRoute
+  '/electrician-in-navrangpura': typeof ElectricianInNavrangpuraRoute
+  '/electrician-in-satellite': typeof ElectricianInSatelliteRoute
+  '/electrician-in-sg-highway': typeof ElectricianInSgHighwayRoute
+  '/electrician-in-vastral': typeof ElectricianInVastralRoute
+  '/fan-light-fitting': typeof FanLightFittingRoute
+  '/ghar-wiring-ahmedabad': typeof GharWiringAhmedabadRoute
+  '/inverter-battery-fitting': typeof InverterBatteryFittingRoute
+  '/mcb-panel-board-fitting': typeof McbPanelBoardFittingRoute
   '/services': typeof ServicesRoute
+  '/short-circuit-repair': typeof ShortCircuitRepairRoute
+  '/switch-board-socket-fitting': typeof SwitchBoardSocketFittingRoute
+  '/blog/electrical-safety-tips-home': typeof BlogElectricalSafetyTipsHomeRoute
+  '/blog/ghar-ki-wiring-kab-change-kare': typeof BlogGharKiWiringKabChangeKareRoute
+  '/blog/inverter-battery-kitne-saal-chalti-hai': typeof BlogInverterBatteryKitneSaalChaltiHaiRoute
+  '/blog/mcb-trip-kyun-hota-hai': typeof BlogMcbTripKyunHotaHaiRoute
+  '/blog/short-circuit-se-kaise-bachen': typeof BlogShortCircuitSeKaiseBachenRoute
+  '/blog/': typeof BlogIndexRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
+  '/areas': typeof AreasRoute
   '/book': typeof BookRoute
+  '/commercial-electrician-ahmedabad': typeof CommercialElectricianAhmedabadRoute
   '/contact': typeof ContactRoute
+  '/electrical-safety-check': typeof ElectricalSafetyCheckRoute
+  '/electrician-in-bopal': typeof ElectricianInBopalRoute
+  '/electrician-in-chandkheda': typeof ElectricianInChandkhedaRoute
+  '/electrician-in-maninagar': typeof ElectricianInManinagarRoute
+  '/electrician-in-navrangpura': typeof ElectricianInNavrangpuraRoute
+  '/electrician-in-satellite': typeof ElectricianInSatelliteRoute
+  '/electrician-in-sg-highway': typeof ElectricianInSgHighwayRoute
+  '/electrician-in-vastral': typeof ElectricianInVastralRoute
+  '/fan-light-fitting': typeof FanLightFittingRoute
+  '/ghar-wiring-ahmedabad': typeof GharWiringAhmedabadRoute
+  '/inverter-battery-fitting': typeof InverterBatteryFittingRoute
+  '/mcb-panel-board-fitting': typeof McbPanelBoardFittingRoute
   '/services': typeof ServicesRoute
+  '/short-circuit-repair': typeof ShortCircuitRepairRoute
+  '/switch-board-socket-fitting': typeof SwitchBoardSocketFittingRoute
+  '/blog/electrical-safety-tips-home': typeof BlogElectricalSafetyTipsHomeRoute
+  '/blog/ghar-ki-wiring-kab-change-kare': typeof BlogGharKiWiringKabChangeKareRoute
+  '/blog/inverter-battery-kitne-saal-chalti-hai': typeof BlogInverterBatteryKitneSaalChaltiHaiRoute
+  '/blog/mcb-trip-kyun-hota-hai': typeof BlogMcbTripKyunHotaHaiRoute
+  '/blog/short-circuit-se-kaise-bachen': typeof BlogShortCircuitSeKaiseBachenRoute
+  '/blog': typeof BlogIndexRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
+  '/areas': typeof AreasRoute
   '/book': typeof BookRoute
+  '/commercial-electrician-ahmedabad': typeof CommercialElectricianAhmedabadRoute
   '/contact': typeof ContactRoute
+  '/electrical-safety-check': typeof ElectricalSafetyCheckRoute
+  '/electrician-in-bopal': typeof ElectricianInBopalRoute
+  '/electrician-in-chandkheda': typeof ElectricianInChandkhedaRoute
+  '/electrician-in-maninagar': typeof ElectricianInManinagarRoute
+  '/electrician-in-navrangpura': typeof ElectricianInNavrangpuraRoute
+  '/electrician-in-satellite': typeof ElectricianInSatelliteRoute
+  '/electrician-in-sg-highway': typeof ElectricianInSgHighwayRoute
+  '/electrician-in-vastral': typeof ElectricianInVastralRoute
+  '/fan-light-fitting': typeof FanLightFittingRoute
+  '/ghar-wiring-ahmedabad': typeof GharWiringAhmedabadRoute
+  '/inverter-battery-fitting': typeof InverterBatteryFittingRoute
+  '/mcb-panel-board-fitting': typeof McbPanelBoardFittingRoute
   '/services': typeof ServicesRoute
+  '/short-circuit-repair': typeof ShortCircuitRepairRoute
+  '/switch-board-socket-fitting': typeof SwitchBoardSocketFittingRoute
+  '/blog/electrical-safety-tips-home': typeof BlogElectricalSafetyTipsHomeRoute
+  '/blog/ghar-ki-wiring-kab-change-kare': typeof BlogGharKiWiringKabChangeKareRoute
+  '/blog/inverter-battery-kitne-saal-chalti-hai': typeof BlogInverterBatteryKitneSaalChaltiHaiRoute
+  '/blog/mcb-trip-kyun-hota-hai': typeof BlogMcbTripKyunHotaHaiRoute
+  '/blog/short-circuit-se-kaise-bachen': typeof BlogShortCircuitSeKaiseBachenRoute
+  '/blog/': typeof BlogIndexRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/about' | '/book' | '/contact' | '/services'
+  fullPaths:
+    | '/'
+    | '/about'
+    | '/areas'
+    | '/book'
+    | '/commercial-electrician-ahmedabad'
+    | '/contact'
+    | '/electrical-safety-check'
+    | '/electrician-in-bopal'
+    | '/electrician-in-chandkheda'
+    | '/electrician-in-maninagar'
+    | '/electrician-in-navrangpura'
+    | '/electrician-in-satellite'
+    | '/electrician-in-sg-highway'
+    | '/electrician-in-vastral'
+    | '/fan-light-fitting'
+    | '/ghar-wiring-ahmedabad'
+    | '/inverter-battery-fitting'
+    | '/mcb-panel-board-fitting'
+    | '/services'
+    | '/short-circuit-repair'
+    | '/switch-board-socket-fitting'
+    | '/blog/electrical-safety-tips-home'
+    | '/blog/ghar-ki-wiring-kab-change-kare'
+    | '/blog/inverter-battery-kitne-saal-chalti-hai'
+    | '/blog/mcb-trip-kyun-hota-hai'
+    | '/blog/short-circuit-se-kaise-bachen'
+    | '/blog/'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/about' | '/book' | '/contact' | '/services'
-  id: '__root__' | '/' | '/about' | '/book' | '/contact' | '/services'
+  to:
+    | '/'
+    | '/about'
+    | '/areas'
+    | '/book'
+    | '/commercial-electrician-ahmedabad'
+    | '/contact'
+    | '/electrical-safety-check'
+    | '/electrician-in-bopal'
+    | '/electrician-in-chandkheda'
+    | '/electrician-in-maninagar'
+    | '/electrician-in-navrangpura'
+    | '/electrician-in-satellite'
+    | '/electrician-in-sg-highway'
+    | '/electrician-in-vastral'
+    | '/fan-light-fitting'
+    | '/ghar-wiring-ahmedabad'
+    | '/inverter-battery-fitting'
+    | '/mcb-panel-board-fitting'
+    | '/services'
+    | '/short-circuit-repair'
+    | '/switch-board-socket-fitting'
+    | '/blog/electrical-safety-tips-home'
+    | '/blog/ghar-ki-wiring-kab-change-kare'
+    | '/blog/inverter-battery-kitne-saal-chalti-hai'
+    | '/blog/mcb-trip-kyun-hota-hai'
+    | '/blog/short-circuit-se-kaise-bachen'
+    | '/blog'
+  id:
+    | '__root__'
+    | '/'
+    | '/about'
+    | '/areas'
+    | '/book'
+    | '/commercial-electrician-ahmedabad'
+    | '/contact'
+    | '/electrical-safety-check'
+    | '/electrician-in-bopal'
+    | '/electrician-in-chandkheda'
+    | '/electrician-in-maninagar'
+    | '/electrician-in-navrangpura'
+    | '/electrician-in-satellite'
+    | '/electrician-in-sg-highway'
+    | '/electrician-in-vastral'
+    | '/fan-light-fitting'
+    | '/ghar-wiring-ahmedabad'
+    | '/inverter-battery-fitting'
+    | '/mcb-panel-board-fitting'
+    | '/services'
+    | '/short-circuit-repair'
+    | '/switch-board-socket-fitting'
+    | '/blog/electrical-safety-tips-home'
+    | '/blog/ghar-ki-wiring-kab-change-kare'
+    | '/blog/inverter-battery-kitne-saal-chalti-hai'
+    | '/blog/mcb-trip-kyun-hota-hai'
+    | '/blog/short-circuit-se-kaise-bachen'
+    | '/blog/'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   AboutRoute: typeof AboutRoute
+  AreasRoute: typeof AreasRoute
   BookRoute: typeof BookRoute
+  CommercialElectricianAhmedabadRoute: typeof CommercialElectricianAhmedabadRoute
   ContactRoute: typeof ContactRoute
+  ElectricalSafetyCheckRoute: typeof ElectricalSafetyCheckRoute
+  ElectricianInBopalRoute: typeof ElectricianInBopalRoute
+  ElectricianInChandkhedaRoute: typeof ElectricianInChandkhedaRoute
+  ElectricianInManinagarRoute: typeof ElectricianInManinagarRoute
+  ElectricianInNavrangpuraRoute: typeof ElectricianInNavrangpuraRoute
+  ElectricianInSatelliteRoute: typeof ElectricianInSatelliteRoute
+  ElectricianInSgHighwayRoute: typeof ElectricianInSgHighwayRoute
+  ElectricianInVastralRoute: typeof ElectricianInVastralRoute
+  FanLightFittingRoute: typeof FanLightFittingRoute
+  GharWiringAhmedabadRoute: typeof GharWiringAhmedabadRoute
+  InverterBatteryFittingRoute: typeof InverterBatteryFittingRoute
+  McbPanelBoardFittingRoute: typeof McbPanelBoardFittingRoute
   ServicesRoute: typeof ServicesRoute
+  ShortCircuitRepairRoute: typeof ShortCircuitRepairRoute
+  SwitchBoardSocketFittingRoute: typeof SwitchBoardSocketFittingRoute
+  BlogElectricalSafetyTipsHomeRoute: typeof BlogElectricalSafetyTipsHomeRoute
+  BlogGharKiWiringKabChangeKareRoute: typeof BlogGharKiWiringKabChangeKareRoute
+  BlogInverterBatteryKitneSaalChaltiHaiRoute: typeof BlogInverterBatteryKitneSaalChaltiHaiRoute
+  BlogMcbTripKyunHotaHaiRoute: typeof BlogMcbTripKyunHotaHaiRoute
+  BlogShortCircuitSeKaiseBachenRoute: typeof BlogShortCircuitSeKaiseBachenRoute
+  BlogIndexRoute: typeof BlogIndexRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -95,11 +404,25 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof AboutRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/areas': {
+      id: '/areas'
+      path: '/areas'
+      fullPath: '/areas'
+      preLoaderRoute: typeof AreasRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/book': {
       id: '/book'
       path: '/book'
       fullPath: '/book'
       preLoaderRoute: typeof BookRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/commercial-electrician-ahmedabad': {
+      id: '/commercial-electrician-ahmedabad'
+      path: '/commercial-electrician-ahmedabad'
+      fullPath: '/commercial-electrician-ahmedabad'
+      preLoaderRoute: typeof CommercialElectricianAhmedabadRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/contact': {
@@ -109,11 +432,151 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ContactRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/electrical-safety-check': {
+      id: '/electrical-safety-check'
+      path: '/electrical-safety-check'
+      fullPath: '/electrical-safety-check'
+      preLoaderRoute: typeof ElectricalSafetyCheckRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/electrician-in-bopal': {
+      id: '/electrician-in-bopal'
+      path: '/electrician-in-bopal'
+      fullPath: '/electrician-in-bopal'
+      preLoaderRoute: typeof ElectricianInBopalRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/electrician-in-chandkheda': {
+      id: '/electrician-in-chandkheda'
+      path: '/electrician-in-chandkheda'
+      fullPath: '/electrician-in-chandkheda'
+      preLoaderRoute: typeof ElectricianInChandkhedaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/electrician-in-maninagar': {
+      id: '/electrician-in-maninagar'
+      path: '/electrician-in-maninagar'
+      fullPath: '/electrician-in-maninagar'
+      preLoaderRoute: typeof ElectricianInManinagarRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/electrician-in-navrangpura': {
+      id: '/electrician-in-navrangpura'
+      path: '/electrician-in-navrangpura'
+      fullPath: '/electrician-in-navrangpura'
+      preLoaderRoute: typeof ElectricianInNavrangpuraRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/electrician-in-satellite': {
+      id: '/electrician-in-satellite'
+      path: '/electrician-in-satellite'
+      fullPath: '/electrician-in-satellite'
+      preLoaderRoute: typeof ElectricianInSatelliteRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/electrician-in-sg-highway': {
+      id: '/electrician-in-sg-highway'
+      path: '/electrician-in-sg-highway'
+      fullPath: '/electrician-in-sg-highway'
+      preLoaderRoute: typeof ElectricianInSgHighwayRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/electrician-in-vastral': {
+      id: '/electrician-in-vastral'
+      path: '/electrician-in-vastral'
+      fullPath: '/electrician-in-vastral'
+      preLoaderRoute: typeof ElectricianInVastralRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/fan-light-fitting': {
+      id: '/fan-light-fitting'
+      path: '/fan-light-fitting'
+      fullPath: '/fan-light-fitting'
+      preLoaderRoute: typeof FanLightFittingRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/ghar-wiring-ahmedabad': {
+      id: '/ghar-wiring-ahmedabad'
+      path: '/ghar-wiring-ahmedabad'
+      fullPath: '/ghar-wiring-ahmedabad'
+      preLoaderRoute: typeof GharWiringAhmedabadRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/inverter-battery-fitting': {
+      id: '/inverter-battery-fitting'
+      path: '/inverter-battery-fitting'
+      fullPath: '/inverter-battery-fitting'
+      preLoaderRoute: typeof InverterBatteryFittingRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/mcb-panel-board-fitting': {
+      id: '/mcb-panel-board-fitting'
+      path: '/mcb-panel-board-fitting'
+      fullPath: '/mcb-panel-board-fitting'
+      preLoaderRoute: typeof McbPanelBoardFittingRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/services': {
       id: '/services'
       path: '/services'
       fullPath: '/services'
       preLoaderRoute: typeof ServicesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/short-circuit-repair': {
+      id: '/short-circuit-repair'
+      path: '/short-circuit-repair'
+      fullPath: '/short-circuit-repair'
+      preLoaderRoute: typeof ShortCircuitRepairRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/switch-board-socket-fitting': {
+      id: '/switch-board-socket-fitting'
+      path: '/switch-board-socket-fitting'
+      fullPath: '/switch-board-socket-fitting'
+      preLoaderRoute: typeof SwitchBoardSocketFittingRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/blog/': {
+      id: '/blog/'
+      path: '/blog'
+      fullPath: '/blog/'
+      preLoaderRoute: typeof BlogIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/blog/electrical-safety-tips-home': {
+      id: '/blog/electrical-safety-tips-home'
+      path: '/blog/electrical-safety-tips-home'
+      fullPath: '/blog/electrical-safety-tips-home'
+      preLoaderRoute: typeof BlogElectricalSafetyTipsHomeRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/blog/ghar-ki-wiring-kab-change-kare': {
+      id: '/blog/ghar-ki-wiring-kab-change-kare'
+      path: '/blog/ghar-ki-wiring-kab-change-kare'
+      fullPath: '/blog/ghar-ki-wiring-kab-change-kare'
+      preLoaderRoute: typeof BlogGharKiWiringKabChangeKareRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/blog/inverter-battery-kitne-saal-chalti-hai': {
+      id: '/blog/inverter-battery-kitne-saal-chalti-hai'
+      path: '/blog/inverter-battery-kitne-saal-chalti-hai'
+      fullPath: '/blog/inverter-battery-kitne-saal-chalti-hai'
+      preLoaderRoute: typeof BlogInverterBatteryKitneSaalChaltiHaiRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/blog/mcb-trip-kyun-hota-hai': {
+      id: '/blog/mcb-trip-kyun-hota-hai'
+      path: '/blog/mcb-trip-kyun-hota-hai'
+      fullPath: '/blog/mcb-trip-kyun-hota-hai'
+      preLoaderRoute: typeof BlogMcbTripKyunHotaHaiRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/blog/short-circuit-se-kaise-bachen': {
+      id: '/blog/short-circuit-se-kaise-bachen'
+      path: '/blog/short-circuit-se-kaise-bachen'
+      fullPath: '/blog/short-circuit-se-kaise-bachen'
+      preLoaderRoute: typeof BlogShortCircuitSeKaiseBachenRouteImport
       parentRoute: typeof rootRouteImport
     }
   }
@@ -122,9 +585,32 @@ declare module '@tanstack/react-router' {
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   AboutRoute: AboutRoute,
+  AreasRoute: AreasRoute,
   BookRoute: BookRoute,
+  CommercialElectricianAhmedabadRoute: CommercialElectricianAhmedabadRoute,
   ContactRoute: ContactRoute,
+  ElectricalSafetyCheckRoute: ElectricalSafetyCheckRoute,
+  ElectricianInBopalRoute: ElectricianInBopalRoute,
+  ElectricianInChandkhedaRoute: ElectricianInChandkhedaRoute,
+  ElectricianInManinagarRoute: ElectricianInManinagarRoute,
+  ElectricianInNavrangpuraRoute: ElectricianInNavrangpuraRoute,
+  ElectricianInSatelliteRoute: ElectricianInSatelliteRoute,
+  ElectricianInSgHighwayRoute: ElectricianInSgHighwayRoute,
+  ElectricianInVastralRoute: ElectricianInVastralRoute,
+  FanLightFittingRoute: FanLightFittingRoute,
+  GharWiringAhmedabadRoute: GharWiringAhmedabadRoute,
+  InverterBatteryFittingRoute: InverterBatteryFittingRoute,
+  McbPanelBoardFittingRoute: McbPanelBoardFittingRoute,
   ServicesRoute: ServicesRoute,
+  ShortCircuitRepairRoute: ShortCircuitRepairRoute,
+  SwitchBoardSocketFittingRoute: SwitchBoardSocketFittingRoute,
+  BlogElectricalSafetyTipsHomeRoute: BlogElectricalSafetyTipsHomeRoute,
+  BlogGharKiWiringKabChangeKareRoute: BlogGharKiWiringKabChangeKareRoute,
+  BlogInverterBatteryKitneSaalChaltiHaiRoute:
+    BlogInverterBatteryKitneSaalChaltiHaiRoute,
+  BlogMcbTripKyunHotaHaiRoute: BlogMcbTripKyunHotaHaiRoute,
+  BlogShortCircuitSeKaiseBachenRoute: BlogShortCircuitSeKaiseBachenRoute,
+  BlogIndexRoute: BlogIndexRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
