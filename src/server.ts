@@ -44,9 +44,22 @@ function isH3SwallowedErrorBody(body: string): boolean {
   }
 }
 
+// Canonical URL policy: no trailing slash (except the site root).
+// "/book/" permanently redirects to "/book" so search engines index one URL.
+function redirectTrailingSlash(request: Request): Response | undefined {
+  const url = new URL(request.url);
+  if (url.pathname.length <= 1 || !url.pathname.endsWith("/")) return undefined;
+
+  url.pathname = url.pathname.replace(/\/+$/, "");
+  return Response.redirect(url.toString(), 301);
+}
+
 export default {
   async fetch(request: Request, env: unknown, ctx: unknown) {
     try {
+      const redirect = redirectTrailingSlash(request);
+      if (redirect) return redirect;
+
       const handler = await getServerEntry();
       const response = await handler.fetch(request, env, ctx);
       return await normalizeCatastrophicSsrResponse(response);
