@@ -1,6 +1,6 @@
 import { Link } from "@tanstack/react-router";
 import { Mail, MessageCircle, Phone } from "lucide-react";
-import logoAsset from "@/assets/zuber-electrician-logo.svg.asset.json";
+import logoAsset from "@/assets/zuber-electrician-logo-512.png.asset.json";
 import { EMAIL, PHONE_DISPLAY, TEL_LINK, WHATSAPP_LINK } from "./contact-info";
 
 export function SiteFooter() {
