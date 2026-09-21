@@ -1,6 +1,6 @@
 import { Link } from "@tanstack/react-router";
 import { Mail, MessageCircle, Phone } from "lucide-react";
-import logoAsset from "@/assets/zuber-electrician-logo-512.png.asset.json";
+const logo = "/zuber-logo.png";
 import { EMAIL, PHONE_DISPLAY, TEL_LINK, WHATSAPP_LINK } from "./contact-info";
 
 export function SiteFooter() {
@@ -9,7 +9,7 @@ export function SiteFooter() {
       <div className="mx-auto grid max-w-6xl gap-8 px-4 py-12 md:grid-cols-3">
         <div>
           <img
-            src={logoAsset.url}
+            src={logo}
             alt="Zuber Shaikh Electrician"
             width={520}
             height={160}
