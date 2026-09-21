@@ -1,6 +1,6 @@
 import { Link } from "@tanstack/react-router";
 import { Phone } from "lucide-react";
-import logoAsset from "@/assets/zuber-electrician-logo-512.png.asset.json";
+import logoAsset from const logo = "/zuber-logo.png";
 import { PHONE_DISPLAY, TEL_LINK } from "./contact-info";
 
 const links = [
