@@ -14,6 +14,20 @@ export const Route = createFileRoute("/blog/electrical-safety-tips-home")({
       { property: "og:url", content: "https://zuberelectrician06.vercel.app/blog/electrical-safety-tips-home" },
     ],
     links: [{ rel: "canonical", href: "https://zuberelectrician06.vercel.app/blog/electrical-safety-tips-home" }],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Article",
+          headline: post.title,
+          description: post.metaDescription,
+          datePublished: post.date,
+          author: { "@type": "Person", name: "Zuber Shaikh" },
+          publisher: { "@type": "Organization", name: "Zuber Shaikh Electrician" },
+        }),
+      },
+    ],
   }),
   component: () => <BlogPostLayout post={post} />,
 });
