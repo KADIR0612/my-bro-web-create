@@ -14,6 +14,20 @@ export const Route = createFileRoute("/blog/short-circuit-se-kaise-bachen")({
       { property: "og:url", content: "https://zuberelectrician06.vercel.app/blog/short-circuit-se-kaise-bachen" },
     ],
     links: [{ rel: "canonical", href: "https://zuberelectrician06.vercel.app/blog/short-circuit-se-kaise-bachen" }],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Article",
+          headline: post.title,
+          description: post.metaDescription,
+          datePublished: post.date,
+          author: { "@type": "Person", name: "Zuber Shaikh" },
+          publisher: { "@type": "Organization", name: "Zuber Shaikh Electrician" },
+        }),
+      },
+    ],
   }),
   component: () => <BlogPostLayout post={post} />,
 });

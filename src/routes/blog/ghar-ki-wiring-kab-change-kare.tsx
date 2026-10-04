@@ -14,6 +14,20 @@ export const Route = createFileRoute("/blog/ghar-ki-wiring-kab-change-kare")({
       { property: "og:url", content: "https://zuberelectrician06.vercel.app/blog/ghar-ki-wiring-kab-change-kare" },
     ],
     links: [{ rel: "canonical", href: "https://zuberelectrician06.vercel.app/blog/ghar-ki-wiring-kab-change-kare" }],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Article",
+          headline: post.title,
+          description: post.metaDescription,
+          datePublished: post.date,
+          author: { "@type": "Person", name: "Zuber Shaikh" },
+          publisher: { "@type": "Organization", name: "Zuber Shaikh Electrician" },
+        }),
+      },
+    ],
   }),
   component: () => <BlogPostLayout post={post} />,
 });
