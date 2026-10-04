@@ -17,6 +17,41 @@ import heroImage from "@/assets/hero-electrician.jpg";
 import { CallBar } from "@/components/site/CallBar";
 import { PHONE_DISPLAY, TEL_LINK, WHATSAPP_LINK } from "@/components/site/contact-info";
 
+const SITE_URL = "https://zuberelectrician06.vercel.app";
+
+const electricianSchema = {
+  "@context": "https://schema.org",
+  "@type": "Electrician",
+  name: "Zuber Shaikh Electrician",
+  url: SITE_URL,
+  telephone: "+918488897375",
+  email: "zubermiyan29@gmail.com",
+  founder: { "@type": "Person", name: "Zuber Shaikh" },
+  address: {
+    "@type": "PostalAddress",
+    addressLocality: "Ahmedabad",
+    addressRegion: "Gujarat",
+    addressCountry: "IN",
+  },
+  areaServed: [
+    "Ahmedabad",
+    "Satellite",
+    "Bopal",
+    "SG Highway",
+    "Maninagar",
+    "Navrangpura",
+    "Vastral",
+    "Chandkheda",
+  ].map((name) => ({ "@type": "City", name })),
+  openingHoursSpecification: {
+    "@type": "OpeningHoursSpecification",
+    dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+    opens: "08:00",
+    closes: "21:00",
+  },
+  priceRange: "₹₹",
+};
+
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
@@ -33,10 +68,25 @@ export const Route = createFileRoute("/")({
           "Local electrician in Ahmedabad for home wiring, MCB, inverter, fan fitting and electrical repair. Call or WhatsApp Zuber Shaikh.",
       },
       { property: "og:type", content: "website" },
-      { property: "og:url", content: "https://zuberelectrician06.vercel.app/" },
+      { property: "og:url", content: `${SITE_URL}/` },
       { name: "twitter:card", content: "summary_large_image" },
     ],
-    links: [{ rel: "canonical", href: "https://zuberelectrician06.vercel.app/" }],
+    links: [{ rel: "canonical", href: `${SITE_URL}/` }],
+    scripts: [
+      { type: "application/ld+json", children: JSON.stringify(electricianSchema) },
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          mainEntity: faqs.map((faq) => ({
+            "@type": "Question",
+            name: faq.question,
+            acceptedAnswer: { "@type": "Answer", text: faq.answer },
+          })),
+        }),
+      },
+    ],
   }),
   component: Index,
 });
