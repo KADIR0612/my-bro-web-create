@@ -11,9 +11,9 @@ export const Route = createFileRoute("/electrician-in-vejalpur")({
       { name: "description", content: area.metaDescription },
       { property: "og:title", content: area.metaTitle },
       { property: "og:description", content: area.metaDescription },
-      { property: "og:url", content: `https://zuberelectrician06-vercel-app.lovable.app.lovable.app${area.slug}` },
+      { property: "og:url", content: `https://zuberelectrician06-vercel-app.lovable.app${area.slug}` },
     ],
-    links: [{ rel: "canonical", href: `https://zuberelectrician06-vercel-app.lovable.app.lovable.app${area.slug}` }],
+    links: [{ rel: "canonical", href: `https://zuberelectrician06-vercel-app.lovable.app${area.slug}` }],
   }),
   component: () => <AreaDetail area={area} />,
 });
