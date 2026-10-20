@@ -15,9 +15,9 @@ export const Route = createFileRoute("/blog/")({
       { name: "description", content: DESC },
       { property: "og:title", content: TITLE },
       { property: "og:description", content: DESC },
-      { property: "og:url", content: "https://zuberelectrician06.vercel.app/blog" },
+      { property: "og:url", content: "https://zuberelectrician06-vercel-app.lovable.app/blog" },
     ],
-    links: [{ rel: "canonical", href: "https://zuberelectrician06.vercel.app/blog" }],
+    links: [{ rel: "canonical", href: "https://zuberelectrician06-vercel-app.lovable.app/blog" }],
   }),
   component: BlogIndex,
 });

@@ -16,13 +16,23 @@ import { Route as BookRouteImport } from './routes/book'
 import { Route as CommercialElectricianAhmedabadRouteImport } from './routes/commercial-electrician-ahmedabad'
 import { Route as ContactRouteImport } from './routes/contact'
 import { Route as ElectricalSafetyCheckRouteImport } from './routes/electrical-safety-check'
+import { Route as ElectricianInBapunagarRouteImport } from './routes/electrician-in-bapunagar'
 import { Route as ElectricianInBopalRouteImport } from './routes/electrician-in-bopal'
 import { Route as ElectricianInChandkhedaRouteImport } from './routes/electrician-in-chandkheda'
+import { Route as ElectricianInGomtipurRouteImport } from './routes/electrician-in-gomtipur'
+import { Route as ElectricianInIsanpurRouteImport } from './routes/electrician-in-isanpur'
+import { Route as ElectricianInJamalpurRouteImport } from './routes/electrician-in-jamalpur'
+import { Route as ElectricianInJuhapuraRouteImport } from './routes/electrician-in-juhapura'
 import { Route as ElectricianInManinagarRouteImport } from './routes/electrician-in-maninagar'
+import { Route as ElectricianInNarodaRouteImport } from './routes/electrician-in-naroda'
 import { Route as ElectricianInNavrangpuraRouteImport } from './routes/electrician-in-navrangpura'
+import { Route as ElectricianInNikolRouteImport } from './routes/electrician-in-nikol'
+import { Route as ElectricianInPaldiRouteImport } from './routes/electrician-in-paldi'
 import { Route as ElectricianInSatelliteRouteImport } from './routes/electrician-in-satellite'
 import { Route as ElectricianInSgHighwayRouteImport } from './routes/electrician-in-sg-highway'
+import { Route as ElectricianInShahpurRouteImport } from './routes/electrician-in-shahpur'
 import { Route as ElectricianInVastralRouteImport } from './routes/electrician-in-vastral'
+import { Route as ElectricianInVejalpurRouteImport } from './routes/electrician-in-vejalpur'
 import { Route as FanLightFittingRouteImport } from './routes/fan-light-fitting'
 import { Route as GharWiringAhmedabadRouteImport } from './routes/ghar-wiring-ahmedabad'
 import { Route as InverterBatteryFittingRouteImport } from './routes/inverter-battery-fitting'
@@ -73,6 +83,11 @@ const ElectricalSafetyCheckRoute = ElectricalSafetyCheckRouteImport.update({
   path: '/electrical-safety-check',
   getParentRoute: () => rootRouteImport,
 } as any)
+const ElectricianInBapunagarRoute = ElectricianInBapunagarRouteImport.update({
+  id: '/electrician-in-bapunagar',
+  path: '/electrician-in-bapunagar',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const ElectricianInBopalRoute = ElectricianInBopalRouteImport.update({
   id: '/electrician-in-bopal',
   path: '/electrician-in-bopal',
@@ -83,9 +98,34 @@ const ElectricianInChandkhedaRoute = ElectricianInChandkhedaRouteImport.update({
   path: '/electrician-in-chandkheda',
   getParentRoute: () => rootRouteImport,
 } as any)
+const ElectricianInGomtipurRoute = ElectricianInGomtipurRouteImport.update({
+  id: '/electrician-in-gomtipur',
+  path: '/electrician-in-gomtipur',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ElectricianInIsanpurRoute = ElectricianInIsanpurRouteImport.update({
+  id: '/electrician-in-isanpur',
+  path: '/electrician-in-isanpur',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ElectricianInJamalpurRoute = ElectricianInJamalpurRouteImport.update({
+  id: '/electrician-in-jamalpur',
+  path: '/electrician-in-jamalpur',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ElectricianInJuhapuraRoute = ElectricianInJuhapuraRouteImport.update({
+  id: '/electrician-in-juhapura',
+  path: '/electrician-in-juhapura',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const ElectricianInManinagarRoute = ElectricianInManinagarRouteImport.update({
   id: '/electrician-in-maninagar',
   path: '/electrician-in-maninagar',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ElectricianInNarodaRoute = ElectricianInNarodaRouteImport.update({
+  id: '/electrician-in-naroda',
+  path: '/electrician-in-naroda',
   getParentRoute: () => rootRouteImport,
 } as any)
 const ElectricianInNavrangpuraRoute =
@@ -94,6 +134,16 @@ const ElectricianInNavrangpuraRoute =
     path: '/electrician-in-navrangpura',
     getParentRoute: () => rootRouteImport,
   } as any)
+const ElectricianInNikolRoute = ElectricianInNikolRouteImport.update({
+  id: '/electrician-in-nikol',
+  path: '/electrician-in-nikol',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ElectricianInPaldiRoute = ElectricianInPaldiRouteImport.update({
+  id: '/electrician-in-paldi',
+  path: '/electrician-in-paldi',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const ElectricianInSatelliteRoute = ElectricianInSatelliteRouteImport.update({
   id: '/electrician-in-satellite',
   path: '/electrician-in-satellite',
@@ -104,9 +154,19 @@ const ElectricianInSgHighwayRoute = ElectricianInSgHighwayRouteImport.update({
   path: '/electrician-in-sg-highway',
   getParentRoute: () => rootRouteImport,
 } as any)
+const ElectricianInShahpurRoute = ElectricianInShahpurRouteImport.update({
+  id: '/electrician-in-shahpur',
+  path: '/electrician-in-shahpur',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const ElectricianInVastralRoute = ElectricianInVastralRouteImport.update({
   id: '/electrician-in-vastral',
   path: '/electrician-in-vastral',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ElectricianInVejalpurRoute = ElectricianInVejalpurRouteImport.update({
+  id: '/electrician-in-vejalpur',
+  path: '/electrician-in-vejalpur',
   getParentRoute: () => rootRouteImport,
 } as any)
 const FanLightFittingRoute = FanLightFittingRouteImport.update({
@@ -188,13 +248,23 @@ export interface FileRoutesByFullPath {
   '/commercial-electrician-ahmedabad': typeof CommercialElectricianAhmedabadRoute
   '/contact': typeof ContactRoute
   '/electrical-safety-check': typeof ElectricalSafetyCheckRoute
+  '/electrician-in-bapunagar': typeof ElectricianInBapunagarRoute
   '/electrician-in-bopal': typeof ElectricianInBopalRoute
   '/electrician-in-chandkheda': typeof ElectricianInChandkhedaRoute
+  '/electrician-in-gomtipur': typeof ElectricianInGomtipurRoute
+  '/electrician-in-isanpur': typeof ElectricianInIsanpurRoute
+  '/electrician-in-jamalpur': typeof ElectricianInJamalpurRoute
+  '/electrician-in-juhapura': typeof ElectricianInJuhapuraRoute
   '/electrician-in-maninagar': typeof ElectricianInManinagarRoute
+  '/electrician-in-naroda': typeof ElectricianInNarodaRoute
   '/electrician-in-navrangpura': typeof ElectricianInNavrangpuraRoute
+  '/electrician-in-nikol': typeof ElectricianInNikolRoute
+  '/electrician-in-paldi': typeof ElectricianInPaldiRoute
   '/electrician-in-satellite': typeof ElectricianInSatelliteRoute
   '/electrician-in-sg-highway': typeof ElectricianInSgHighwayRoute
+  '/electrician-in-shahpur': typeof ElectricianInShahpurRoute
   '/electrician-in-vastral': typeof ElectricianInVastralRoute
+  '/electrician-in-vejalpur': typeof ElectricianInVejalpurRoute
   '/fan-light-fitting': typeof FanLightFittingRoute
   '/ghar-wiring-ahmedabad': typeof GharWiringAhmedabadRoute
   '/inverter-battery-fitting': typeof InverterBatteryFittingRoute
@@ -217,13 +287,23 @@ export interface FileRoutesByTo {
   '/commercial-electrician-ahmedabad': typeof CommercialElectricianAhmedabadRoute
   '/contact': typeof ContactRoute
   '/electrical-safety-check': typeof ElectricalSafetyCheckRoute
+  '/electrician-in-bapunagar': typeof ElectricianInBapunagarRoute
   '/electrician-in-bopal': typeof ElectricianInBopalRoute
   '/electrician-in-chandkheda': typeof ElectricianInChandkhedaRoute
+  '/electrician-in-gomtipur': typeof ElectricianInGomtipurRoute
+  '/electrician-in-isanpur': typeof ElectricianInIsanpurRoute
+  '/electrician-in-jamalpur': typeof ElectricianInJamalpurRoute
+  '/electrician-in-juhapura': typeof ElectricianInJuhapuraRoute
   '/electrician-in-maninagar': typeof ElectricianInManinagarRoute
+  '/electrician-in-naroda': typeof ElectricianInNarodaRoute
   '/electrician-in-navrangpura': typeof ElectricianInNavrangpuraRoute
+  '/electrician-in-nikol': typeof ElectricianInNikolRoute
+  '/electrician-in-paldi': typeof ElectricianInPaldiRoute
   '/electrician-in-satellite': typeof ElectricianInSatelliteRoute
   '/electrician-in-sg-highway': typeof ElectricianInSgHighwayRoute
+  '/electrician-in-shahpur': typeof ElectricianInShahpurRoute
   '/electrician-in-vastral': typeof ElectricianInVastralRoute
+  '/electrician-in-vejalpur': typeof ElectricianInVejalpurRoute
   '/fan-light-fitting': typeof FanLightFittingRoute
   '/ghar-wiring-ahmedabad': typeof GharWiringAhmedabadRoute
   '/inverter-battery-fitting': typeof InverterBatteryFittingRoute
@@ -247,13 +327,23 @@ export interface FileRoutesById {
   '/commercial-electrician-ahmedabad': typeof CommercialElectricianAhmedabadRoute
   '/contact': typeof ContactRoute
   '/electrical-safety-check': typeof ElectricalSafetyCheckRoute
+  '/electrician-in-bapunagar': typeof ElectricianInBapunagarRoute
   '/electrician-in-bopal': typeof ElectricianInBopalRoute
   '/electrician-in-chandkheda': typeof ElectricianInChandkhedaRoute
+  '/electrician-in-gomtipur': typeof ElectricianInGomtipurRoute
+  '/electrician-in-isanpur': typeof ElectricianInIsanpurRoute
+  '/electrician-in-jamalpur': typeof ElectricianInJamalpurRoute
+  '/electrician-in-juhapura': typeof ElectricianInJuhapuraRoute
   '/electrician-in-maninagar': typeof ElectricianInManinagarRoute
+  '/electrician-in-naroda': typeof ElectricianInNarodaRoute
   '/electrician-in-navrangpura': typeof ElectricianInNavrangpuraRoute
+  '/electrician-in-nikol': typeof ElectricianInNikolRoute
+  '/electrician-in-paldi': typeof ElectricianInPaldiRoute
   '/electrician-in-satellite': typeof ElectricianInSatelliteRoute
   '/electrician-in-sg-highway': typeof ElectricianInSgHighwayRoute
+  '/electrician-in-shahpur': typeof ElectricianInShahpurRoute
   '/electrician-in-vastral': typeof ElectricianInVastralRoute
+  '/electrician-in-vejalpur': typeof ElectricianInVejalpurRoute
   '/fan-light-fitting': typeof FanLightFittingRoute
   '/ghar-wiring-ahmedabad': typeof GharWiringAhmedabadRoute
   '/inverter-battery-fitting': typeof InverterBatteryFittingRoute
@@ -278,13 +368,23 @@ export interface FileRouteTypes {
     | '/commercial-electrician-ahmedabad'
     | '/contact'
     | '/electrical-safety-check'
+    | '/electrician-in-bapunagar'
     | '/electrician-in-bopal'
     | '/electrician-in-chandkheda'
+    | '/electrician-in-gomtipur'
+    | '/electrician-in-isanpur'
+    | '/electrician-in-jamalpur'
+    | '/electrician-in-juhapura'
     | '/electrician-in-maninagar'
+    | '/electrician-in-naroda'
     | '/electrician-in-navrangpura'
+    | '/electrician-in-nikol'
+    | '/electrician-in-paldi'
     | '/electrician-in-satellite'
     | '/electrician-in-sg-highway'
+    | '/electrician-in-shahpur'
     | '/electrician-in-vastral'
+    | '/electrician-in-vejalpur'
     | '/fan-light-fitting'
     | '/ghar-wiring-ahmedabad'
     | '/inverter-battery-fitting'
@@ -307,13 +407,23 @@ export interface FileRouteTypes {
     | '/commercial-electrician-ahmedabad'
     | '/contact'
     | '/electrical-safety-check'
+    | '/electrician-in-bapunagar'
     | '/electrician-in-bopal'
     | '/electrician-in-chandkheda'
+    | '/electrician-in-gomtipur'
+    | '/electrician-in-isanpur'
+    | '/electrician-in-jamalpur'
+    | '/electrician-in-juhapura'
     | '/electrician-in-maninagar'
+    | '/electrician-in-naroda'
     | '/electrician-in-navrangpura'
+    | '/electrician-in-nikol'
+    | '/electrician-in-paldi'
     | '/electrician-in-satellite'
     | '/electrician-in-sg-highway'
+    | '/electrician-in-shahpur'
     | '/electrician-in-vastral'
+    | '/electrician-in-vejalpur'
     | '/fan-light-fitting'
     | '/ghar-wiring-ahmedabad'
     | '/inverter-battery-fitting'
@@ -336,13 +446,23 @@ export interface FileRouteTypes {
     | '/commercial-electrician-ahmedabad'
     | '/contact'
     | '/electrical-safety-check'
+    | '/electrician-in-bapunagar'
     | '/electrician-in-bopal'
     | '/electrician-in-chandkheda'
+    | '/electrician-in-gomtipur'
+    | '/electrician-in-isanpur'
+    | '/electrician-in-jamalpur'
+    | '/electrician-in-juhapura'
     | '/electrician-in-maninagar'
+    | '/electrician-in-naroda'
     | '/electrician-in-navrangpura'
+    | '/electrician-in-nikol'
+    | '/electrician-in-paldi'
     | '/electrician-in-satellite'
     | '/electrician-in-sg-highway'
+    | '/electrician-in-shahpur'
     | '/electrician-in-vastral'
+    | '/electrician-in-vejalpur'
     | '/fan-light-fitting'
     | '/ghar-wiring-ahmedabad'
     | '/inverter-battery-fitting'
@@ -366,13 +486,23 @@ export interface RootRouteChildren {
   CommercialElectricianAhmedabadRoute: typeof CommercialElectricianAhmedabadRoute
   ContactRoute: typeof ContactRoute
   ElectricalSafetyCheckRoute: typeof ElectricalSafetyCheckRoute
+  ElectricianInBapunagarRoute: typeof ElectricianInBapunagarRoute
   ElectricianInBopalRoute: typeof ElectricianInBopalRoute
   ElectricianInChandkhedaRoute: typeof ElectricianInChandkhedaRoute
+  ElectricianInGomtipurRoute: typeof ElectricianInGomtipurRoute
+  ElectricianInIsanpurRoute: typeof ElectricianInIsanpurRoute
+  ElectricianInJamalpurRoute: typeof ElectricianInJamalpurRoute
+  ElectricianInJuhapuraRoute: typeof ElectricianInJuhapuraRoute
   ElectricianInManinagarRoute: typeof ElectricianInManinagarRoute
+  ElectricianInNarodaRoute: typeof ElectricianInNarodaRoute
   ElectricianInNavrangpuraRoute: typeof ElectricianInNavrangpuraRoute
+  ElectricianInNikolRoute: typeof ElectricianInNikolRoute
+  ElectricianInPaldiRoute: typeof ElectricianInPaldiRoute
   ElectricianInSatelliteRoute: typeof ElectricianInSatelliteRoute
   ElectricianInSgHighwayRoute: typeof ElectricianInSgHighwayRoute
+  ElectricianInShahpurRoute: typeof ElectricianInShahpurRoute
   ElectricianInVastralRoute: typeof ElectricianInVastralRoute
+  ElectricianInVejalpurRoute: typeof ElectricianInVejalpurRoute
   FanLightFittingRoute: typeof FanLightFittingRoute
   GharWiringAhmedabadRoute: typeof GharWiringAhmedabadRoute
   InverterBatteryFittingRoute: typeof InverterBatteryFittingRoute
@@ -439,6 +569,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ElectricalSafetyCheckRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/electrician-in-bapunagar': {
+      id: '/electrician-in-bapunagar'
+      path: '/electrician-in-bapunagar'
+      fullPath: '/electrician-in-bapunagar'
+      preLoaderRoute: typeof ElectricianInBapunagarRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/electrician-in-bopal': {
       id: '/electrician-in-bopal'
       path: '/electrician-in-bopal'
@@ -453,6 +590,34 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ElectricianInChandkhedaRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/electrician-in-gomtipur': {
+      id: '/electrician-in-gomtipur'
+      path: '/electrician-in-gomtipur'
+      fullPath: '/electrician-in-gomtipur'
+      preLoaderRoute: typeof ElectricianInGomtipurRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/electrician-in-isanpur': {
+      id: '/electrician-in-isanpur'
+      path: '/electrician-in-isanpur'
+      fullPath: '/electrician-in-isanpur'
+      preLoaderRoute: typeof ElectricianInIsanpurRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/electrician-in-jamalpur': {
+      id: '/electrician-in-jamalpur'
+      path: '/electrician-in-jamalpur'
+      fullPath: '/electrician-in-jamalpur'
+      preLoaderRoute: typeof ElectricianInJamalpurRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/electrician-in-juhapura': {
+      id: '/electrician-in-juhapura'
+      path: '/electrician-in-juhapura'
+      fullPath: '/electrician-in-juhapura'
+      preLoaderRoute: typeof ElectricianInJuhapuraRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/electrician-in-maninagar': {
       id: '/electrician-in-maninagar'
       path: '/electrician-in-maninagar'
@@ -460,11 +625,32 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ElectricianInManinagarRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/electrician-in-naroda': {
+      id: '/electrician-in-naroda'
+      path: '/electrician-in-naroda'
+      fullPath: '/electrician-in-naroda'
+      preLoaderRoute: typeof ElectricianInNarodaRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/electrician-in-navrangpura': {
       id: '/electrician-in-navrangpura'
       path: '/electrician-in-navrangpura'
       fullPath: '/electrician-in-navrangpura'
       preLoaderRoute: typeof ElectricianInNavrangpuraRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/electrician-in-nikol': {
+      id: '/electrician-in-nikol'
+      path: '/electrician-in-nikol'
+      fullPath: '/electrician-in-nikol'
+      preLoaderRoute: typeof ElectricianInNikolRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/electrician-in-paldi': {
+      id: '/electrician-in-paldi'
+      path: '/electrician-in-paldi'
+      fullPath: '/electrician-in-paldi'
+      preLoaderRoute: typeof ElectricianInPaldiRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/electrician-in-satellite': {
@@ -481,11 +667,25 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ElectricianInSgHighwayRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/electrician-in-shahpur': {
+      id: '/electrician-in-shahpur'
+      path: '/electrician-in-shahpur'
+      fullPath: '/electrician-in-shahpur'
+      preLoaderRoute: typeof ElectricianInShahpurRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/electrician-in-vastral': {
       id: '/electrician-in-vastral'
       path: '/electrician-in-vastral'
       fullPath: '/electrician-in-vastral'
       preLoaderRoute: typeof ElectricianInVastralRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/electrician-in-vejalpur': {
+      id: '/electrician-in-vejalpur'
+      path: '/electrician-in-vejalpur'
+      fullPath: '/electrician-in-vejalpur'
+      preLoaderRoute: typeof ElectricianInVejalpurRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/fan-light-fitting': {
@@ -590,13 +790,23 @@ const rootRouteChildren: RootRouteChildren = {
   CommercialElectricianAhmedabadRoute: CommercialElectricianAhmedabadRoute,
   ContactRoute: ContactRoute,
   ElectricalSafetyCheckRoute: ElectricalSafetyCheckRoute,
+  ElectricianInBapunagarRoute: ElectricianInBapunagarRoute,
   ElectricianInBopalRoute: ElectricianInBopalRoute,
   ElectricianInChandkhedaRoute: ElectricianInChandkhedaRoute,
+  ElectricianInGomtipurRoute: ElectricianInGomtipurRoute,
+  ElectricianInIsanpurRoute: ElectricianInIsanpurRoute,
+  ElectricianInJamalpurRoute: ElectricianInJamalpurRoute,
+  ElectricianInJuhapuraRoute: ElectricianInJuhapuraRoute,
   ElectricianInManinagarRoute: ElectricianInManinagarRoute,
+  ElectricianInNarodaRoute: ElectricianInNarodaRoute,
   ElectricianInNavrangpuraRoute: ElectricianInNavrangpuraRoute,
+  ElectricianInNikolRoute: ElectricianInNikolRoute,
+  ElectricianInPaldiRoute: ElectricianInPaldiRoute,
   ElectricianInSatelliteRoute: ElectricianInSatelliteRoute,
   ElectricianInSgHighwayRoute: ElectricianInSgHighwayRoute,
+  ElectricianInShahpurRoute: ElectricianInShahpurRoute,
   ElectricianInVastralRoute: ElectricianInVastralRoute,
+  ElectricianInVejalpurRoute: ElectricianInVejalpurRoute,
   FanLightFittingRoute: FanLightFittingRoute,
   GharWiringAhmedabadRoute: GharWiringAhmedabadRoute,
   InverterBatteryFittingRoute: InverterBatteryFittingRoute,

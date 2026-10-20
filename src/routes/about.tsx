@@ -19,10 +19,10 @@ export const Route = createFileRoute("/about")({
         content: "ITI-qualified local electrician in Ahmedabad with 7+ years of trusted experience.",
       },
       { property: "og:type", content: "website" },
-      { property: "og:url", content: "https://zuberelectrician06.vercel.app/about" },
+      { property: "og:url", content: "https://zuberelectrician06-vercel-app.lovable.app/about" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
-    links: [{ rel: "canonical", href: "https://zuberelectrician06.vercel.app/about" }],
+    links: [{ rel: "canonical", href: "https://zuberelectrician06-vercel-app.lovable.app/about" }],
   }),
   component: AboutPage,
 });

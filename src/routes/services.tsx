@@ -32,10 +32,10 @@ export const Route = createFileRoute("/services")({
           "Local electrician in Ahmedabad for home, shop and commercial wiring, fitting, repair and maintenance.",
       },
       { property: "og:type", content: "website" },
-      { property: "og:url", content: "https://zuberelectrician06.vercel.app/services" },
+      { property: "og:url", content: "https://zuberelectrician06-vercel-app.lovable.app/services" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
-    links: [{ rel: "canonical", href: "https://zuberelectrician06.vercel.app/services" }],
+    links: [{ rel: "canonical", href: "https://zuberelectrician06-vercel-app.lovable.app/services" }],
   }),
   component: ServicesPage,
 });

@@ -7,13 +7,13 @@ const area = areaPages.find((a) => a.slug === "/electrician-in-navrangpura")!;
 export const Route = createFileRoute("/electrician-in-navrangpura")({
   head: () => ({
     meta: [
-      { title: "Electrician in Navrangpura Ahmedabad | Zuber Shaikh" },
-      { name: "description", content: "Electrician in Navrangpura, Ahmedabad for homes, offices and shops — wiring, MCB, inverter and repair work. Call Zuber Shaikh 84888 97375." },
-      { property: "og:title", content: "Electrician in Navrangpura Ahmedabad | Zuber Shaikh" },
-      { property: "og:description", content: "Electrician in Navrangpura, Ahmedabad for homes, offices and shops — wiring, MCB, inverter and repair work. Call Zuber Shaikh 84888 97375." },
-      { property: "og:url", content: "https://zuberelectrician06.vercel.app/electrician-in-navrangpura" },
+      { title: area.metaTitle },
+      { name: "description", content: area.metaDescription },
+      { property: "og:title", content: area.metaTitle },
+      { property: "og:description", content: area.metaDescription },
+      { property: "og:url", content: `https://zuberelectrician06-vercel-app.lovable.app${area.slug}` },
     ],
-    links: [{ rel: "canonical", href: "https://zuberelectrician06.vercel.app/electrician-in-navrangpura" }],
+    links: [{ rel: "canonical", href: `https://zuberelectrician06-vercel-app.lovable.app${area.slug}` }],
   }),
   component: () => <AreaDetail area={area} />,
 });

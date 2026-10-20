@@ -14,10 +14,11 @@ import {
   Star,
 } from "lucide-react";
 import heroImage from "@/assets/hero-electrician.jpg";
+import { areaPages } from "@/data/areas-data";
 import { CallBar } from "@/components/site/CallBar";
 import { PHONE_DISPLAY, TEL_LINK, WHATSAPP_LINK } from "@/components/site/contact-info";
 
-const SITE_URL = "https://zuberelectrician06.vercel.app";
+const SITE_URL = "https://zuberelectrician06-vercel-app.lovable.app";
 
 const electricianSchema = {
   "@context": "https://schema.org",
@@ -34,15 +35,9 @@ const electricianSchema = {
     addressCountry: "IN",
   },
   areaServed: [
-    "Ahmedabad",
-    "Satellite",
-    "Bopal",
-    "SG Highway",
-    "Maninagar",
-    "Navrangpura",
-    "Vastral",
-    "Chandkheda",
-  ].map((name) => ({ "@type": "City", name })),
+    { "@type": "City", name: "Ahmedabad" },
+    ...areaPages.map((a) => ({ "@type": "Place", name: `${a.area}, Ahmedabad` })),
+  ],
   openingHoursSpecification: {
     "@type": "OpeningHoursSpecification",
     dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
