@@ -17,7 +17,7 @@ import heroImage from "@/assets/hero-electrician.jpg";
 import { CallBar } from "@/components/site/CallBar";
 import { PHONE_DISPLAY, TEL_LINK, WHATSAPP_LINK } from "@/components/site/contact-info";
 
-const SITE_URL = "https://zuberelectrician06.vercel.app";
+const SITE_URL = "https://zuberelectrician06-vercel-app.lovable.app";
 
 const electricianSchema = {
   "@context": "https://schema.org",

@@ -11,9 +11,9 @@ export const Route = createFileRoute("/blog/ghar-ki-wiring-kab-change-kare")({
       { name: "description", content: "Purani wiring change karne ke 7 signs — switch garam hona, fuse udna, light dim hona. Rewiring cost aur process Hinglish guide." },
       { property: "og:title", content: "Ghar Ki Wiring Kab Change Kare? 7 Signs | Zuber Shaikh" },
       { property: "og:description", content: "Purani wiring change karne ke 7 signs — switch garam hona, fuse udna, light dim hona. Rewiring cost aur process Hinglish guide." },
-      { property: "og:url", content: "https://zuberelectrician06.vercel.app/blog/ghar-ki-wiring-kab-change-kare" },
+      { property: "og:url", content: "https://zuberelectrician06-vercel-app.lovable.app/blog/ghar-ki-wiring-kab-change-kare" },
     ],
-    links: [{ rel: "canonical", href: "https://zuberelectrician06.vercel.app/blog/ghar-ki-wiring-kab-change-kare" }],
+    links: [{ rel: "canonical", href: "https://zuberelectrician06-vercel-app.lovable.app/blog/ghar-ki-wiring-kab-change-kare" }],
     scripts: [
       {
         type: "application/ld+json",

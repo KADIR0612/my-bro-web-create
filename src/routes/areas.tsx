@@ -7,7 +7,7 @@ import { areaPages } from "@/data/areas-data";
 
 const TITLE = "Electrician Near Me in Ahmedabad Areas | Zuber Shaikh";
 const DESC =
-  "Electrician service areas in Ahmedabad — Satellite, Bopal, SG Highway, Maninagar, Navrangpura, Vastral aur Chandkheda. Call or WhatsApp 84888 97375.";
+  "Electrician service areas in Ahmedabad — Satellite, Bopal, Maninagar, Gomtipur, Juhapura, Shahpur, Naroda aur aur bhi. Call or WhatsApp 84888 97375.";
 
 export const Route = createFileRoute("/areas")({
   head: () => ({
@@ -16,9 +16,9 @@ export const Route = createFileRoute("/areas")({
       { name: "description", content: DESC },
       { property: "og:title", content: TITLE },
       { property: "og:description", content: DESC },
-      { property: "og:url", content: "https://zuberelectrician06.vercel.app/areas" },
+      { property: "og:url", content: "https://zuberelectrician06-vercel-app.lovable.app/areas" },
     ],
-    links: [{ rel: "canonical", href: "https://zuberelectrician06.vercel.app/areas" }],
+    links: [{ rel: "canonical", href: "https://zuberelectrician06-vercel-app.lovable.app/areas" }],
   }),
   component: AreasPage,
 });

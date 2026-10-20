@@ -11,9 +11,9 @@ export const Route = createFileRoute("/blog/electrical-safety-tips-home")({
       { name: "description", content: "Ghar ke liye 10 simple electrical safety tips — earthing, MCB, socket, extension board aur bachchon ki safety. Ahmedabad electrician guide." },
       { property: "og:title", content: "10 Electrical Safety Tips for Home | Zuber Shaikh" },
       { property: "og:description", content: "Ghar ke liye 10 simple electrical safety tips — earthing, MCB, socket, extension board aur bachchon ki safety. Ahmedabad electrician guide." },
-      { property: "og:url", content: "https://zuberelectrician06.vercel.app/blog/electrical-safety-tips-home" },
+      { property: "og:url", content: "https://zuberelectrician06-vercel-app.lovable.app/blog/electrical-safety-tips-home" },
     ],
-    links: [{ rel: "canonical", href: "https://zuberelectrician06.vercel.app/blog/electrical-safety-tips-home" }],
+    links: [{ rel: "canonical", href: "https://zuberelectrician06-vercel-app.lovable.app/blog/electrical-safety-tips-home" }],
     scripts: [
       {
         type: "application/ld+json",

@@ -11,9 +11,9 @@ export const Route = createFileRoute("/ghar-wiring-ahmedabad")({
       { name: "description", content: "House wiring in Ahmedabad by ITI qualified electrician Zuber Shaikh. Nayi wiring, purani wiring change, earthing aur switch board kaam. Call 84888 97375." },
       { property: "og:title", content: "Ghar Ki Wiring Ahmedabad | Zuber Shaikh Electrician" },
       { property: "og:description", content: "House wiring in Ahmedabad by ITI qualified electrician Zuber Shaikh. Nayi wiring, purani wiring change, earthing aur switch board kaam. Call 84888 97375." },
-      { property: "og:url", content: "https://zuberelectrician06.vercel.app/ghar-wiring-ahmedabad" },
+      { property: "og:url", content: "https://zuberelectrician06-vercel-app.lovable.app/ghar-wiring-ahmedabad" },
     ],
-    links: [{ rel: "canonical", href: "https://zuberelectrician06.vercel.app/ghar-wiring-ahmedabad" }],
+    links: [{ rel: "canonical", href: "https://zuberelectrician06-vercel-app.lovable.app/ghar-wiring-ahmedabad" }],
   }),
   component: () => <ServiceDetail service={service} />,
 });

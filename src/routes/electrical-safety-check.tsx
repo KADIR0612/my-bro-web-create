@@ -11,9 +11,9 @@ export const Route = createFileRoute("/electrical-safety-check")({
       { name: "description", content: "Home aur shop ka electrical safety check in Ahmedabad — wiring, earthing, MCB aur load inspection by ITI electrician Zuber Shaikh. Call 84888 97375." },
       { property: "og:title", content: "Electrical Safety Check Ahmedabad | Zuber Shaikh" },
       { property: "og:description", content: "Home aur shop ka electrical safety check in Ahmedabad — wiring, earthing, MCB aur load inspection by ITI electrician Zuber Shaikh. Call 84888 97375." },
-      { property: "og:url", content: "https://zuberelectrician06.vercel.app/electrical-safety-check" },
+      { property: "og:url", content: "https://zuberelectrician06-vercel-app.lovable.app/electrical-safety-check" },
     ],
-    links: [{ rel: "canonical", href: "https://zuberelectrician06.vercel.app/electrical-safety-check" }],
+    links: [{ rel: "canonical", href: "https://zuberelectrician06-vercel-app.lovable.app/electrical-safety-check" }],
   }),
   component: () => <ServiceDetail service={service} />,
 });

@@ -13,4 +13,4 @@ Allow: /
 User-agent: *
 Allow: /
 
-Sitemap: https://zuberelectrician06.vercel.app/sitemap.xml
+Sitemap: https://zuberelectrician06-vercel-app.lovable.app/sitemap.xml
