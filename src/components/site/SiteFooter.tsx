@@ -2,6 +2,8 @@ import { Link } from "@tanstack/react-router";
 import { Mail, MessageCircle, Phone } from "lucide-react";
 const logo = "/zuber-logo.png";
 import { EMAIL, PHONE_DISPLAY, TEL_LINK, WHATSAPP_LINK } from "./contact-info";
+import { areaPages } from "@/data/areas-data";
+import { servicePages } from "@/data/services-data";
 
 export function SiteFooter() {
   return (
@@ -62,6 +64,28 @@ export function SiteFooter() {
             Contact
           </Link>
         </nav>
+      </div>
+      <div className="mx-auto grid max-w-6xl gap-8 border-t border-border px-4 py-10 md:grid-cols-2">
+        <div>
+          <h3 className="text-lg">Services</h3>
+          <div className="mt-3 flex flex-wrap gap-x-4 gap-y-2 text-sm text-muted-foreground">
+            {servicePages.map((s) => (
+              <Link key={s.slug} to={s.slug} className="hover:text-primary">
+                {s.cardTitle}
+              </Link>
+            ))}
+          </div>
+        </div>
+        <div>
+          <h3 className="text-lg">Ahmedabad Areas</h3>
+          <div className="mt-3 flex flex-wrap gap-x-4 gap-y-2 text-sm text-muted-foreground">
+            {areaPages.map((a) => (
+              <Link key={a.slug} to={a.slug} className="hover:text-primary">
+                Electrician in {a.area}
+              </Link>
+            ))}
+          </div>
+        </div>
       </div>
       <div className="border-t border-border py-4 text-center text-xs text-muted-foreground">
         &copy; {new Date().getFullYear()} Zuber Shaikh Electrician. All rights reserved.
