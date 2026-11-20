@@ -16,9 +16,9 @@ export const Route = createFileRoute("/areas")({
       { name: "description", content: DESC },
       { property: "og:title", content: TITLE },
       { property: "og:description", content: DESC },
-      { property: "og:url", content: "https://zuberelectrician06-vercel-app.lovable.app/areas" },
+      { property: "og:url", content: "https://zuberelectrician06.vercel.app/areas" },
     ],
-    links: [{ rel: "canonical", href: "https://zuberelectrician06-vercel-app.lovable.app/areas" }],
+    links: [{ rel: "canonical", href: "https://zuberelectrician06.vercel.app/areas" }],
   }),
   component: AreasPage,
 });
