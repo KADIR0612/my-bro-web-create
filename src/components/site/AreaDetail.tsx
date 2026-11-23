@@ -51,6 +51,38 @@ export function AreaDetail({ area }: { area: AreaPage }) {
           </div>
         </div>
 
+        {area.contentSectionTitle ? (
+          <section className="mx-auto mt-14 max-w-4xl space-y-5">
+            <h2 className="text-2xl">{area.contentSectionTitle}</h2>
+            {area.contentSectionParagraphs?.map((p) => (
+              <p key={p.slice(0, 24)} className="text-muted-foreground">
+                {p}
+              </p>
+            ))}
+          </section>
+        ) : null}
+
+        {area.faqs?.length ? (
+          <section className="mx-auto mt-14 max-w-4xl">
+            <h2 className="text-2xl">SG Highway Electrician FAQs</h2>
+            <div className="mt-6 divide-y divide-border border-y border-border">
+              {area.faqs.map((faq) => (
+                <details key={faq.question} className="group py-5">
+                  <summary className="flex cursor-pointer list-none items-center justify-between gap-4 font-semibold text-foreground">
+                    <span>{faq.question}</span>
+                    <span className="text-2xl text-primary transition-transform group-open:rotate-45" aria-hidden="true">
+                      +
+                    </span>
+                  </summary>
+                  <p className="mt-3 max-w-3xl text-sm leading-6 text-muted-foreground">
+                    {faq.answer}
+                  </p>
+                </details>
+              ))}
+            </div>
+          </section>
+        ) : null}
+
         <CtaBlock
           title={`${area.area} Mein Electrician Chahiye?`}
           text="Abhi call ya WhatsApp kijiye — Zuber bhai khud baat karenge."

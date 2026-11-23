@@ -7,6 +7,9 @@ export type AreaPage = {
   intro: string;
   paragraphs: string[];
   landmarks: string[];
+  contentSectionTitle?: string;
+  contentSectionParagraphs?: string[];
+  faqs?: { question: string; answer: string }[];
 };
 
 export const areaPages: AreaPage[] = [
@@ -43,17 +46,46 @@ export const areaPages: AreaPage[] = [
   {
     slug: "/electrician-in-sg-highway",
     area: "SG Highway",
-    metaTitle: "Electrician on SG Highway Ahmedabad | Zuber Shaikh",
+    metaTitle: "Electrician in SG Highway Ahmedabad | Home & Office | Zuber Shaikh",
     metaDescription:
-      "Electrician near SG Highway, Ahmedabad for homes, offices and shops. Panel board, wiring, MCB and lighting work. Call Zuber Shaikh 84888 97375.",
+      "Electrician near SG Highway, Ahmedabad for homes, offices and showrooms. Wiring, panel board, MCB, lighting. Call Zuber Shaikh 84888 97375.",
     h1: "Electrician on SG Highway, Ahmedabad",
     intro:
-      "SG Highway ke aas-paas ghar, office ya showroom ke liye electrician chahiye? Zuber Shaikh residential aur commercial dono tarah ka electrical kaam karte hain.",
+      "Looking for an electrician near SG Highway, Ahmedabad? Electrician in SG Highway Ahmedabad ke liye Zuber Shaikh ko call karein. ITI qualified hain, 7 saal ke experience ke saath. Ghar, office, showroom aur apartment ka electrical kaam same day mein hota hai.",
     paragraphs: [
-      "SG Highway par offices aur showrooms mein panel board, three phase load, display lighting aur maintenance ka kaam regular chalta hai. Hum business hours ke hisaab se kaam plan karte hain.",
-      "Residential towers ke liye AC point, geyser wiring, MCB change aur inverter line ka kaam same day ho jaata hai.",
+      "SG Highway ke homes, offices aur showrooms ke electrical kaam ke liye Zuber Shaikh se contact karein. Wiring, MCB, panel board, lighting, fan fitting aur inverter line ke liye visit availability location aur issue ke hisaab se confirm hoti hai.",
+    ],
+    contentSectionTitle: "SG Highway Par Hum Kya Kaam Karte Hain",
+    contentSectionParagraphs: [
+      "SG Highway par residential towers, clinics, offices aur showrooms mein har tarah ke electrical kaam ki zaroorat hoti hai. Zuber Shaikh ghar aur business ke liye wiring, MCB, panel board, switchboard, fan-light fitting, inverter line aur lighting repair karte hain. Pehle phone ya WhatsApp par issue, exact location aur kaam ka type bata dein; isse visit ki planning aur kaam ka estimate samajhna aasaan hota hai. Ghar, shop ya workplace ke electrical kaam ke liye aap contact kar sakte hain.",
+      "Commercial electrician SG Highway Ahmedabad ke roop mein shops aur showrooms ke display lights, extra power points, switchboard changes aur routine maintenance mein madad milti hai. Kaam shuru karne se pehle requirement aur existing setup discuss karte hain, taaki kaam business ke timing aur jagah ki zaroorat ke hisaab se plan ho. Naya fitting ho ya repair, issue ki details pehle share karne se sahi visit plan karna aasaan rehta hai.",
+      "Panel board electrician SG Highway service mein MCB ya panel se judi dikkat, breaker replacement aur circuit ke load ki jaanch shamil ho sakti hai. Agar MCB baar-baar trip ho, burning smell aaye ya panel se unusual awaaz sunai de, toh use khud kholne ke bajay supply band karke electrician ko call karein. Site par inspection ke baad hi kaam aur required material ka scope bataya ja sakta hai.",
+      "Office electrician SG Highway Ahmedabad ki zaroorat extra desk points, lighting changes, fan fitting, switchboard repair ya maintenance ke liye ho sakti hai. Office aur showroom ka kaam karte waqt access, working hours aur affected area ko pehle samajhna useful hota hai. Isse team ke kaam ko dhyaan mein rakhkar visit arrange karne mein madad milti hai; urgent fault ho toh phone par symptoms aur location batayein.",
+      "Service area mein SG Highway ke saath electrician in Thaltej, Bodakdev, Gurukul, Sola aur aas-paas ke locations ke liye bhi call kar sakte hain. Aapka exact address milne par availability confirm ki ja sakti hai. Kaam ke baad basic checking aur zaroori safety points samjha diye jaate hain. Wiring, lighting, MCB ya panel board ke kaam ke liye Zuber Shaikh ko call ya WhatsApp karein aur visit se pehle apni requirement share karein.",
     ],
     landmarks: ["Gurukul", "Thaltej", "Sola", "Bodakdev"],
+    faqs: [
+      {
+        question: "SG Highway par electrician ka charge kitna hota hai?",
+        answer:
+          "Charge kaam ke type, fault aur required material par depend karta hai. Issue aur location batayein; kaam shuru hone se pehle estimate discuss kar sakte hain.",
+      },
+      {
+        question: "Kya same day service milti hai?",
+        answer:
+          "Availability aur kaam ki urgency ke hisaab se same-day visit arrange karne ki koshish hoti hai. Call ya WhatsApp par location aur issue bhej dein.",
+      },
+      {
+        question: "Office aur showroom ka kaam bhi karte ho?",
+        answer:
+          "Haan, office aur showroom ke wiring, panel board, MCB aur lighting ke kaam liye jaate hain. Visit ka time business hours aur site access ke hisaab se plan hota hai.",
+      },
+      {
+        question: "Kaun se areas cover hote hain?",
+        answer:
+          "SG Highway ke saath Thaltej, Bodakdev, Gurukul aur Sola mein bhi service ke liye contact karein. Exact location batane par availability confirm hogi.",
+      },
+    ],
   },
   {
     slug: "/electrician-in-maninagar",
