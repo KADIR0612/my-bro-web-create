@@ -10,3 +10,4 @@
 <!-- LOVABLE:END -->
 
 - Store area-specific supplemental copy and FAQs as optional `AreaPage` fields rendered by `AreaDetail`, keeping other area pages unchanged.
+- Keep JSON-LD serialization in shared helpers and attach page-specific schema through TanStack route `head()` so markup is consistent and server-rendered.
